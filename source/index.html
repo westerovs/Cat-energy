@@ -6,22 +6,18 @@
   </head>
   <body>
 
-
-
-
-
     <!-- Логотип/меню -->
 
-    <header class="first-screener">
-      <a class="first-screener__logo">
-        <img class="first-screener__logo-image" src="http://placehold.it/33x38" alt="CAT ENERGY"width="33" height="38">
+    <header class="page-header">
+      <a class="page-header__header">
+        <img class="logo" src="http://placehold.it/33x38" alt="CAT ENERGY"width="33" height="38">
       </a>
       <!-- навигация -->
-      <nav class="main-nav" >
+      <nav class="main-nav__wrapper" >
         <!-- мобильная кнопка меню -->
         <button class="main-nav__toggle" type="button"></button>
         <!-- список меню -->
-        <div class="main-nav__wrapper">
+        <div class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="#">Главная</a>
@@ -43,13 +39,13 @@
 
     <!-- 1й экран Превью -->
 
-    <main class="first-screen">
-      <h1 class="first-screen__h1">Функциональное питание для котов</h1>
-      <p сlass="first-screen__stats-intro" >Занялся собой? Займись котом!</p>
-      <img class="first-screen__main-product-logo" src="http://placehold.it/270x280" alt="CAT ENERGY" width="280" height="270" >
+    <main class="main">
+      <h1 class="main-h1">Функциональное питание для котов</h1>
+      <h3 сlass="main-h3" >Занялся собой? Займись котом!</h3>
+      <img class="main-logo" src="http://placehold.it/270x280" alt="CAT ENERGY" width="280" height="270" >
       <!-- кнопка переход на страницу подбор программы -->
-      <a class="user-list__login" href="#">
-        <button>Подобрать программу</button>
+      <a class="main__cat-energy-form" href="#">
+        <button class="button main_button">Подобрать программу</button>
       </a>
     </main>
 
@@ -63,7 +59,7 @@
 
       <!-- похудение -->
       <section class="categories__block-program">
-        <h2 class="categories__h2">Похудение</h2>
+        <h2 class="categories__title">Похудение</h2>
         <div class="categories__img categories__img--thin"></div>
         <p   class="categories__paragraf">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -73,7 +69,7 @@
       </section>
       <!-- масса  -->
       <section class="categories__block-program">
-        <h2 class="categories__h2">Похудение</h2>
+        <h2 class="categories__title">Похудение</h2>
         <div class="categories__img categories__img--fat"></div>
         <p   class="categories__paragraf">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -91,40 +87,40 @@
 
       <!-- 3 экран Как это работает -->
 
-      <article class="advantages">
+      <section class="advantage">
 
-        <h2 class="advantages__h2">Как это работает</h2>
+        <h2 class="advantage__title">Как это работает</h2>
 
-        <section class="advantages__section">
-          <div class="advantages__icon"></div>
-          <p class="advantages__paragrag">
+        <article class="advantage">
+          <div class="advantage__icon"></div>
+          <p class="advantage__paragrag">
             Функциональное питание содержит только полезные
             питательные вещества.
           </p>
-        </section>
+        </article>
 
-        <section class="advantages__section">
-          <div class="advantages__icon"></div>
-          <p class="advantages__paragrag">
+        <article class="advantage">
+          <div class="advantage__icon"></div>
+          <p class="advantage__paragrag">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
-        </section>
+        </article>
 
-        <section class="advantages__section">
-          <div class="advantages__icon"></div>
-          <p class="advantages__paragrag">
+        <article class="advantage">
+          <div class="advantage__icon"></div>
+          <p class="advantage__paragrag">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
-        </section>
+        </article>
 
-        <section class="advantages__section">
-          <div class="advantages__icon"></div>
-          <p class="advantages__paragrag">
+        <article class="advantage">
+          <div class="advantage__icon"></div>
+          <p class="advantage__paragrag">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
-        </section>
+        </article>
 
-      </article>
+      </section>
 
 
 
@@ -133,7 +129,7 @@
       <!-- 4 Экран Живой пример до-после-->
       <article class="before-after" >
 
-        <h2 class="before-after__h2">Живой пример</h2>
+        <h2 class="before-after__title">Живой пример</h2>
         <p class="before-after__paragraf">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой
           обычный корм на Cat Energy Slim. Отличный результат без
@@ -187,13 +183,13 @@
       <!-- 6 блок футер -->
 
       <footer class="footer">
-        <h2 class="footer__h2">CAT ENERGY</h2>
-        <div class="footer__social">
+        <h2 class="footer__title">CAT ENERGY</h2>
+        <div class="social">
           <div class="social-icon social-icon-vk"></div>
           <div class="social-icon social-icon-inst"></div>
           <div class="social-icon social-icon-fb"></div>
         </div>
-        <p class="footer__paragraf">HTML Academy</p>
+        <p class="footer__paragraph">HTML Academy</p>
         <div class="footer__logo"></div>
       </footer>
 
