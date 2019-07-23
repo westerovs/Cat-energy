@@ -2,50 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>Подбор программы</title>
   </head>
   <body>
 
+
     <!--  меню -->
-    <header class="page-header">
-      <a class="page-header__header">
-        <img class="logo" src="http://placehold.it/33x38" alt="CAT ENERGY" width="33" height="38">
+    <header class="header-nav">
+      <a class="header-nav__link">
+        <img class="header-nav__logo" src="http://placehold.it/33x38" alt="CAT ENERGY" width="33" height="38">
       </a>
-      <!-- навигация -->
-      <nav class="main-nav__wrapper" >
-        <!-- мобильная кнопка меню -->
-        <button class="main-nav__toggle" type="button"></button>
+      <!-- навигация меню-->
+      <nav class="header-nav__navigation" >
+        <!-- мобильная кнопка показать-скрыть -->
+        <button class="header-nav__toggle" type="button"></button>
         <!-- список меню -->
-        <div class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="#">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Каталог продукции</a>
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="#">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Подбор программы</a>
+            <li class="header-nav__item">
+              <a class="header-nav__item-link" href="#">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
 
 
 
-      <!-- 6 блок футер -->
-      <footer class="footer">
-        <h2 class="footer__title">CAT ENERGY</h2>
-        <div class="social">
-          <div class="social-icon social-icon-vk"></div>
-          <div class="social-icon social-icon-inst"></div>
-          <div class="social-icon social-icon-fb"></div>
-        </div>
-        <p class="footer__paragraph">HTML Academy</p>
-        <div class="footer__logo"></div>
-      </footer>
+    <!-- 6 блок футер -->
+    <footer class="footer">
+      <h2 class="footer__title">CAT ENERGY</h2>
+      <ul class="footer__list">
+        <li class="footer__item footer__item--vk"></li>
+        <li class="footer__item footer__item--inst"></li>
+        <li class="footer__item footer__item--fb"></li>
+      </ul>
+      <div class="footer__copyright--position">
+        <p class="footer__copyright">HTML Academy</p>
+      </div>
+      <div class="footer__logo"></div>
+    </footer>
+
 
   </body>
 </html>
