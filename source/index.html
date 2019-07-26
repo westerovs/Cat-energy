@@ -3,32 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
 
 
     <!--  меню -->
     <header class="header">
-      <a class="header__link">
-        <img class="header__logo" src="http://placehold.it/33x38" alt="CAT ENERGY" width="33" height="38">
+      <a href="#" class="header__link-logo">
+        <img class="header__logo" src="img/logo-mobile.svg" alt="CAT ENERGY" width="33" height="38">
       </a>
       <img class="header__logo-text" src="http://placehold.it/101x18" alt="СAT ENERGY" width="101" height="18">
+      <!-- мобильная кнопка показать-скрыть - добавлю если буду успевать сдать проект-->
+      <!-- <button class="header__toggle" type="button"></button> -->
       <!-- навигация меню-->
       <nav class="header__navigation" >
-        <!-- мобильная кнопка показать-скрыть -->
-        <button class="header__toggle" type="button"></button>
         <!-- список меню -->
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Главная</a>
-            </li>
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Каталог продукции</a>
-            </li>
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Подбор программы</a>
-            </li>
-          </ul>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__nav-link" href="#">Главная</a>
+          </li>
+          <li class="header__item">
+            <a class="header__nav-link" href="#">Каталог продукции</a>
+          </li>
+          <li class="header__item">
+            <a class="header__nav-link" href="#">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -38,7 +40,7 @@
       <section class="preview">
         <h1 class="preview__title">Функциональное питание для котов</h1>
         <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
-        <img class="preview__logo" src="http://placehold.it/270x280" alt="CAT ENERGY" width="280" height="270" >
+        <img class="preview__logo" src="img/index-can-mobile@1x.png" alt="CAT ENERGY" width="280" height="270" >
         <!-- кнопка переход на страницу подбор программы -->
         <a class="button preview__button" href="#">Подобрать программу</a>
       </section>
