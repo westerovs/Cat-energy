@@ -5,6 +5,26 @@
 // цвет текста;
 // добавьте внутренние и внешние отступы и обводки для крупных сеточных блоков.
 
+// Позиционирование
+// Блочная модель
+// Типографика
+// Оформление
+// Анимация
+// Разное
+
+// .block {
+//   .block__elem1 {
+
+//   }
+//   .block__elem2 {
+//    :hover {
+
+//     }
+//   }
+// }
+
+
+
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
@@ -22,6 +42,8 @@
 @white: #ffffff;
 @black: #111111;
 @gray: #444444;
+@green: #68B738;
+@light-gray: #f2f2f2;
 
 body {
   font-family: "Oswald", "Arial", sans-serif;
@@ -42,10 +64,59 @@ body {
 @import 'blocks/header__list.less';
 @import 'blocks/header__item.less';
 @import 'blocks/header__nav-link.less';
+// экран Превью
+@import 'blocks/preview.less';
+@import 'blocks/preview__title.less';
+@import 'blocks/preview__subtitle.less';
+@import 'blocks/preview__button.less';
+//блок контакты
+@import 'blocks/contacts.less';
+@import 'blocks/contacts__container.less';
+@import 'blocks/contacts__text.less';
+@import 'blocks/contacts__map.less';
+//экран Похудение/Масса
+@import 'blocks/categories.less';
+@import 'blocks/categories__list.less';
+@import 'blocks/categories__item.less';
+@import 'blocks/categories__img.less';
+@import 'blocks/categories__title.less';
+@import 'blocks/categories__container.less';
+@import 'blocks/categories__link.less';
+@import 'blocks/categories__arrow.less';
+// экран как это работает
+@import 'blocks/advantage.less';
+@import 'blocks/advantage__list.less';
+@import 'blocks/advantage.less';
+@import 'blocks/advantage__item.less';
+@import 'blocks/advantage__icon.less';
+@import 'blocks/advantage__text.less';
+// экран живой пример
+@import 'blocks/before-after.less';
+@import 'blocks/page-title.less';
+@import 'blocks/before-after__text.less';
+@import 'blocks/before-after__container.less';
+@import 'blocks/before-after__description.less';
+@import 'blocks/before-after__slider.less';
+@import 'blocks/before-after__subtitle.less';
+@import 'blocks/before-after__img.less';
+@import 'blocks/before-after__span.less';
+@import 'blocks/before-after__input.less';
+// Блок футер
+@import 'blocks/footer.less';
+@import 'blocks/footer__title.less';
+@import 'blocks/footer__list.less';
+@import 'blocks/footer__item.less';
+@import 'blocks/footer__link-vk.less';
+@import 'blocks/footer__link-in.less';
+@import 'blocks/footer__link-fb.less';
+@import 'blocks/footer__copyright.less';
+@import 'blocks/footer__logo.less';
+//кнопка
+@import 'blocks/button.less';
+//заголовок
+@import 'blocks/page-title.less';
 
-// @import 'blocks/preview__title.less';
-// @import 'blocks/preview__subtitle.less';
-// @import 'blocks/preview.less';
+
 
 
 

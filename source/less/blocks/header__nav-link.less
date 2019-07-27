@@ -1,23 +1,10 @@
-@border: #e6e6e6;
-
-.font-header__nav-link(){
+.font-header__nav-link() {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  text-align: center;
   text-decoration: none;
 }
 
-.padding-top-header__nav-link(@value-padding: 25px;) {
-  padding-top: @value-padding;
-}
-
-.border(){
-  border-top: 1px solid @border;
-}
-
 .header__nav-link {
-  color: @black;
-  .padding-top-header__nav-link();
-  .border();
+  .font-header__nav-link()
 }
