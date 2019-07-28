@@ -1,7 +1,50 @@
-.categories() {
+.categories {
   background-color: @white;
 }
 
-.categories {
-  .categories()
+// li
+.categories__list {
+  list-style-type: none;
+    .categories__item {
+      background-color: @light-gray;
+      margin-bottom: 20px;
+        .categories__img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: @green;
+        }
+    }
+}
+.categories__container {
+  p {
+    margin-bottom: 14px;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.9;
+    color: @gray;
+  }
+}
+
+
+// a
+.categories__link {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+    .categories__arrow {
+      background-image: url(../../img/icon-right-arrow-long.svg);
+      width: 24px;
+      height: 11px;
+  }
+}
+
+.categories__title {
+  margin-bottom: 23px;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.9;
+  color: @black;
 }
