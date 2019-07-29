@@ -3,54 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
 
 
     <!--  меню -->
     <header class="header">
-      <a class="header__link">
-        <img class="header__logo" src="http://placehold.it/33x38" alt="CAT ENERGY" width="33" height="38">
+      <a href="index.html">
+        <img class="header__logo" src="img/logo-logo mobile.svg" alt="CAT ENERGY" width="33" height="38">
       </a>
-      <img class="header__logo-text" src="http://placehold.it/101x18" alt="СAT ENERGY" width="101" height="18">
+      <img class="header__logo-text" src="img/logo-logo-mobile-header.svg" alt="СAT ENERGY" width="101" height="18">
+      <!-- мобильная кнопка показать-скрыть - добавлю если буду успевать сдать проект-->
+      <!-- <button class="header__toggle" type="button"></button> -->
       <!-- навигация меню-->
       <nav class="header__navigation" >
-        <!-- мобильная кнопка показать-скрыть -->
-        <button class="header__toggle" type="button"></button>
         <!-- список меню -->
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Главная</a>
-            </li>
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Каталог продукции</a>
-            </li>
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Подбор программы</a>
-            </li>
-          </ul>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="header__item">
+            <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="header__item">
+            <a class="header__nav-link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
 
     <main>
-      <!-- 1й экран Превью -->
+      <!-- экран Превью -->
       <section class="preview">
         <h1 class="preview__title">Функциональное питание для котов</h1>
         <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
-        <img class="preview__logo" src="http://placehold.it/270x280" alt="CAT ENERGY" width="280" height="270" >
+        <img class="preview__logo" src="img/index-can-mobile@1x.png" alt="CAT ENERGY" width="280" height="270" >
         <!-- кнопка переход на страницу подбор программы -->
         <a class="button preview__button" href="#">Подобрать программу</a>
       </section>
 
 
-      <!-- 2й экран Похудение/Масса -->
+      <!-- экран Похудение/Масса -->
       <section class="categories">
         <ul class="categories__list">
           <!-- похудение -->
           <li class="categories__item">
             <div class="categories__img">
-              <img src="http://placehold.it/35x49" width="35" height="49" alt="похудение">
+              <svg src="img/icon-cat-pro.svg" width="35" height="49" alt="похудение"></svg>
             </div>
             <h2 class="categories__title">Похудение</h2>
             <div class="categories__container">
@@ -65,7 +67,7 @@
           <!-- масса -->
           <li class="categories__item">
             <div class="categories__img">
-              <img src="http://placehold.it/67x28" width="67" height="28" alt="набор массы">
+              <svg src="img/icon-cat-slim.svg" width="67" height="28" alt="набор массы"></svg>
             </div>
             <h2 class="categories__title">Набор массы</h2>
             <div class="categories__container">
@@ -138,18 +140,18 @@
           <!-- Блок кило -->
           <div class="before-after__description">
             5 кг
-            <p>снижение веса</p>
+            <p>снижение<br>веса</p>
           </div>
           <!-- Блок дни -->
           <div class="before-after__description">
             60 дней
-            <p>затрачено времени</p>
+            <p>затрачено<br>времени</p>
           </div>
         </div>
         <!-- Слайдер -->
         <div class="before-after__slider" >
           <h3 class="before-after__subtitle">Затраты на питание: 15000 руб.</h3>
-          <img class="before-after__img" src="http://placehold.it/33x38" alt="" width="311"  height="232">
+          <img class="before-after__img" src="img/before-mobile@1x.png" alt="" width="311"  height="232">
           <!-- инпут -->
           <span class="before-after__span">Было</span>
           <input class="before-after__input" type="range">
@@ -171,6 +173,7 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
       </div>
+      <img class="contacts__map" src="img/bg-map-mobile@1x.png"></img>
     </div>
 
 
@@ -180,24 +183,25 @@
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link-vk" href="#">
-            <svg></svg>
+            <img src="img/icon-vk.svg" width="16" height="16">
           </a>
         </li>
-        <li class="footer__itemst">
+        <li class="footer__item">
           <a class="footer__link-in" href="#">
-            <svg></svg>
+            <img src="img/icon-insta.svg" width="16" height="16">
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link-fb" href="#">
-            <svg></svg>
+            <img src="img/icon-fb.svg" width="16" height="16">
           </a>
         </li>
       </ul>
       <div class="footer__copyright">
         <p>HTML Academy</p>
       </div>
-      <div class="footer__logo"></div>
+      <svg class="footer__logo" width="27" height="34"></svg>
+      <!-- <div class="footer__logo"></div> -->
     </footer>
 
 

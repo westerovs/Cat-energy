@@ -3,32 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
 
 
     <!--  меню -->
     <header class="header">
-      <a class="header__link">
-        <img class="header__logo" src="http://placehold.it/33x38" alt="CAT ENERGY" width="33" height="38">
+      <a href="index.html">
+        <img class="header__logo" src="img/logo-logo mobile.svg" alt="CAT ENERGY" width="33" height="38">
       </a>
-      <img class="header__logo-text" src="http://placehold.it/101x18" alt="СAT ENERGY" width="101" height="18">
+      <img class="header__logo-text" src="img/logo-logo-mobile-header.svg" alt="СAT ENERGY" width="101" height="18">
+      <!-- мобильная кнопка показать-скрыть - добавлю если буду успевать сдать проект-->
+      <!-- <button class="header__toggle" type="button"></button> -->
       <!-- навигация меню-->
       <nav class="header__navigation" >
-        <!-- мобильная кнопка показать-скрыть -->
-        <button class="header__toggle" type="button"></button>
         <!-- список меню -->
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Главная</a>
-            </li>
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Каталог продукции</a>
-            </li>
-            <li class="header__item">
-              <a class="header__nav-link" href="#">Подбор программы</a>
-            </li>
-          </ul>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="header__item">
+            <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="header__item">
+            <a class="header__nav-link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -41,7 +43,7 @@
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
-            <img src="http://placehold.it/270x280" alt="cat-energy pro 500 г" width="140" height="144">
+            <img src="img/chicken-small-mobile@1x.jpg" alt="cat-energy pro 500 г" width="140" height="144">
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
@@ -66,7 +68,7 @@
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
-            <img src="http://placehold.it/270x280" alt="cat-energy pro 500 г" width="140" height="144">
+            <img src="img/chicken-big-mobile@1x.jpg" alt="cat-energy pro 500 г" width="140" height="144">
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
@@ -91,7 +93,7 @@
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
-            <img src="http://placehold.it/270x280" alt="cat-energy pro 500 г" width="140" height="144">
+            <img src="img/fish-small-mobile@1x.jpg" alt="cat-energy pro 500 г" width="140" height="144">
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
@@ -116,7 +118,7 @@
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
-            <img src="http://placehold.it/270x280" alt="cat-energy pro 500 г" width="140" height="144">
+            <img src="img/fish-big-mobile@1x.jpg" alt="cat-energy pro 500 г" width="140" height="144">
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
@@ -141,7 +143,7 @@
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
-            <img src="http://placehold.it/270x280" alt="cat-energy pro 500 г" width="140" height="144">
+            <img src="img/buckwheat-small-mobile@1x.jpg" alt="cat-energy pro 500 г" width="140" height="144">
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
@@ -166,7 +168,7 @@
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
-            <img src="http://placehold.it/270x280" alt="cat-energy pro 500 г" width="140" height="144">
+            <img src="img/buckwheat-big-mobile@1x.jpg" alt="cat-energy pro 500 г" width="140" height="144">
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
@@ -191,7 +193,7 @@
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
-            <img src="http://placehold.it/270x280" alt="cat-energy pro 500 г" width="140" height="144">
+            <img src="img/rice-small-mobile@1x.jpg" alt="cat-energy pro 500 г" width="140" height="144">
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
@@ -217,7 +219,7 @@
         <li class="catalog__item show-all" >
           <div class="show-all__icon"></div>
           <div class="show-all__description">
-            <h2 class="show-all__title">Показать ещё 100500 товаров</h2>
+            <h2 class="catalog-item__page-title">Показать ещё 100500 товаров</h2>
             <p class="show-all__paragraph">На самом деле их гораздо больше !</p>
           </div>
           <a class="button show-all__button" href="#">Заказать</a>
@@ -232,24 +234,25 @@
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link-vk" href="#">
-            <svg></svg>
+            <img src="img/icon-vk.svg" width="16" height="16">
           </a>
         </li>
-        <li class="footer__itemst">
+        <li class="footer__item">
           <a class="footer__link-in" href="#">
-            <svg></svg>
+            <img src="img/icon-insta.svg" width="16" height="16">
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link-fb" href="#">
-            <svg></svg>
+            <img src="img/icon-fb.svg" width="16" height="16">
           </a>
         </li>
       </ul>
       <div class="footer__copyright">
         <p>HTML Academy</p>
       </div>
-      <div class="footer__logo"></div>
+      <svg class="footer__logo" width="27" height="34"></svg>
+      <!-- <div class="footer__logo"></div> -->
     </footer>
 
 
