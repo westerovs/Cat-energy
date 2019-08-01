@@ -1,3 +1,80 @@
+// Начните вёрстку вашего проекта с помощью препроцессора:
+
+// задайте фоновые цвета и фоновые изображения для блоков;
+// параметры текста: шрифты, размеры шрифта, межстрочные расстояния,
+// цвет текста;
+// добавьте внутренние и внешние отступы и обводки для крупных сеточных блоков.
+
+// Позиционирование
+// Блочная модель
+// Типографика
+// Оформление
+// Анимация
+// Разное
+
+// Блок хэдэр
+@import 'blocks/header.less';
+// экран Превью
+@import 'blocks/preview.less';
+//блок контакты
+@import 'blocks/contacts.less';
+//экран Похудение/Масса
+@import 'blocks/categories.less';
+// экран как это работает
+@import 'blocks/advantage.less';
+// экран живой пример
+@import 'blocks/before-after.less';
+// Блок футер
+@import 'blocks/footer.less';
+//кнопка
+@import 'blocks/button.less';
+//заголовок
+@import 'blocks/page-title.less';
+
+
+// Блок каталог
+@import 'blocks/catalog.less';
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+}
+
+@white: #ffffff;
+@black: #111111;
+@gray: #444444;
+@green: #68B738;
+@light-gray: #f2f2f2;
+@border-gray: #cdcdcd;
+
+.arial() {
+  font-family: "Arial", "Tahoma", sans-serif;
+}
+
+.oswald() {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
 body {
-  background-color: red;
+  .oswald();
+}
+
+.padding-global(@value-padding: 20px;) {
+  padding-left: @value-padding;
+  padding-right: @value-padding;
 }
