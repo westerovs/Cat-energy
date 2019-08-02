@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 320px;
   background-color: #ffffff;
+  outline: 1px dashed #000;
 }
 
 .contacts__container {
@@ -17,5 +18,19 @@
     font-size: 14px;
     font-family: "Arial", "Helvetica", sans-serif;
     color: @black;
+  }
+}
+
+//планшет
+@media screen and (min-width: 768px) {
+  .contacts {
+    width: 768px;
+  }
+}
+
+// decstop
+@media screen and (min-width: 1440px) {
+  .contacts {
+    width: 1440px;
   }
 }

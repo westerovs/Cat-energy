@@ -1,24 +1,67 @@
 .preview{
   margin: 0 auto;
   width: 320px;
-  background-color: @white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-image: url(../../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
+  outline: 1px dashed #000;
 }
 
 .preview__title {
-  margin-bottom: 23px;
-  margin-top: 0;
+  padding: 0;
+  margin: 25px 0 25px 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: 0.9;
+  line-height: 36px;
   color: @white;
+  text-align: center;
 }
 
 .preview__subtitle {
-  margin-bottom: 30px;
-  font-weight: 300;
+  padding: 0;
+  margin: 0 0 28px 0;
+  font-weight: 100;
   font-size: 14px;
-  line-height: 0.9;
+  text-transform: uppercase;
+  text-align: center;
   color: @white;
+}
+
+.preview__logo {
+  align-self: center;
+  // flex-grow: 1;
+}
+
+.preview__button {
+  .button();
+  margin-top: 5px;
+}
+
+
+
+//планшет
+@media screen and (min-width: 768px) {
+  .preview {
+    width: 768px;
+    background-image: none;
+  }
+
+  .preview__title,
+  .preview__subtitle {
+    color: @black;
+  }
+  .preview__title {
+    font-size: 60px;
+  }
+
+}
+
+
+// decstop
+@media screen and (min-width: 1440px) {
+  .preview {
+    width: 1440px;
+  }
 }

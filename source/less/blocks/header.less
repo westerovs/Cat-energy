@@ -3,7 +3,7 @@
 .header {
   margin: 0 auto;
   width: 320px;
-  background-color: #ffffff;
+  background-color: @white;
   outline: 1px dashed #000;
 }
 
@@ -11,15 +11,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  padding-top: 8px;
+  padding-top: 12px;
   padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header__toggle {
   width: 18px;
   height: 18px;
   outline: 1px dashed #000;
+}
+
+.header__logo-text {
+  margin-right: 14px;
 }
 
 //выпадающее меню
@@ -59,12 +64,18 @@
   }
 
   .top-bar {
-     padding: 0 30px;
+    padding: 20px 30px 0 30px;
+    box-sizing: border-box;
   }
 
- .header__logo-text {
-  display: none;
- }
+  .header__logo {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
 
   .header__toggle {
     display: none;
@@ -79,6 +90,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
+    padding-top: 7px;
   }
 
   .header__item:first-child {
@@ -102,7 +114,7 @@
   }
 
   .top-bar {
-     padding: 0 40px;
+    padding: 0 40px;
   }
   .header__item:last-child {
     margin-right: 40px;

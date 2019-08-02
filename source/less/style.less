@@ -1,7 +1,7 @@
-*{
-  padding: 0;
-  margin: 0;
-}
+// * {
+//   padding: 0;
+//   margin: 0;
+// }
 
 // Позиционирование
 // Блочная модель
@@ -13,24 +13,24 @@
 // Блок хэдэр
 @import 'blocks/header.less';
 
-// // экран Превью
-// @import 'blocks/preview.less';
-// //блок контакты
-// @import 'blocks/contacts.less';
-// //экран Похудение/Масса
-// @import 'blocks/categories.less';
-// // экран как это работает
-// @import 'blocks/advantage.less';
-// // экран живой пример
-// @import 'blocks/before-after.less';
-// // Блок футер
-// @import 'blocks/footer.less';
+// экран Превью
+@import 'blocks/preview.less';
+//блок контакты
+@import 'blocks/contacts.less';
+//экран Похудение/Масса
+@import 'blocks/categories.less';
+// экран как это работает
+@import 'blocks/advantage.less';
+// экран живой пример
+@import 'blocks/before-after.less';
+// Блок футер
+@import 'blocks/footer.less';
 // //кнопка
 @import 'blocks/button.less';
 // //заголовок
-// @import 'blocks/page-title.less';
+@import 'blocks/page-title.less';
 // Блок каталог
-// @import 'blocks/catalog.less';
+@import 'blocks/catalog.less';
 
 @font-face {
   font-family: "Oswald";
@@ -55,6 +55,21 @@ a {
 ul {
   list-style-type: none;
 }
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 img {
   max-width: 100%;
