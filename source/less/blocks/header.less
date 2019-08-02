@@ -1,55 +1,110 @@
+
+//блок логотип
 .header {
   margin: 0 auto;
-  width: 280px;
-  background-color: @white;
-  // .padding-global();
+  width: 320px;
+  background-color: #ffffff;
+  outline: 1px dashed #000;
 }
 
-.header__wrapper {
+.top-bar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  outline: 1px solid #000;
+  padding: 0 20px;
+  padding-top: 8px;
+  padding-bottom: 17px;
 }
 
-.header__navigation{
-  outline: 1px solid #000;
+.header__toggle {
+  width: 18px;
+  height: 18px;
+  outline: 1px dashed #000;
 }
 
+//выпадающее меню
 .header__list {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .header__item:first-child {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px dashed @border-light-gray;
   height: 63px;
 }
 
 .header__item {
   height: 64px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px dashed @border-light-gray;
   display: flex;
 }
 
 .header__nav-link {
-  text-decoration: none;
   margin: auto;
-}
-
-.header__link-logo {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
   text-decoration: none;
+  color: @black;
 }
 
 
-.header__list {
-  list-style-type: none;
-  .header__nav-link {
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: @black;
+
+
+//планшет
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+    display: flex;
+  }
+
+  .top-bar {
+     padding: 0 30px;
+  }
+
+ .header__logo-text {
+  display: none;
+ }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__navigation {
+    width: 100%;
+    outline: 1px dashed #000;
+  }
+
+  .header__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .header__item:first-child {
+    border-top: 0;
+  }
+
+  .header__item {
+    border: none;
+    margin-right: 35px;
+  }
+
+  .header__item:last-child {
+    margin-right: 30px;
+  }
+}
+
+// decstop
+@media screen and (min-width: 1440px) {
+  .header {
+    width: 1440px;
+  }
+
+  .top-bar {
+     padding: 0 40px;
+  }
+  .header__item:last-child {
+    margin-right: 40px;
   }
 }
