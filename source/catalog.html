@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <meta name="viewport"  content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
@@ -11,13 +12,15 @@
 
     <!--  меню -->
     <header class="header">
-      <a href="index.html">
-        <img class="header__logo" src="img/logo-logo mobile.svg" alt="CAT ENERGY" width="33" height="38">
-      </a>
-      <img class="header__logo-text" src="img/logo-logo-mobile-header.svg" alt="СAT ENERGY" width="101" height="18">
-      <!-- мобильная кнопка показать-скрыть - добавлю если буду успевать сдать проект-->
-      <!-- <button class="header__toggle" type="button"></button> -->
-      <!-- навигация меню-->
+      <!-- лого -->
+      <div class="header__top-bar">
+        <a href="index.html">
+          <img class="header__logo" src="img/logo-logo-mobile.svg" alt="CAT ENERGY" width="33" height="38">
+        </a>
+        <img class="header__logo-text" src="img/logo-logo-mobile-header.svg" alt="СAT ENERGY" width="101" height="18">
+        <span class="header__toggle"></span>
+      </div>
+      <!-- навигация -->
       <nav class="header__navigation" >
         <!-- список меню -->
         <ul class="header__list">
@@ -37,9 +40,9 @@
 
     <!-- Каталог -->
     <div class="catalog">
-      <h1 class="catalog__title">Каталог продукции</h1>
-      <ul class="catalog__list">
+      <h1 class="catalog__title page-title">Каталог продукции</h1>
 
+      <ul class="catalog__list">
         <li class="catalog__item catalog-item">
           <!-- картинка -->
           <div class="catalog-item__image">
@@ -47,7 +50,7 @@
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
-            <h2 class="catalog-item__page-title">cat energy pro 500 г</h2>
+            <h2 class="catalog-item__page-title">cat energy<br>pro 500 г</h2>
             <table class="catalog-item__table">
               <tr>
                 <td>Объём</td>
@@ -72,7 +75,7 @@
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
-            <h2 class="catalog-item__page-title">cat energy pro 500 г</h2>
+            <h2 class="catalog-item__page-title">cat energy<br>pro 500 г</h2>
             <table class="catalog-item__table">
               <tr>
                 <td>Объём</td>
@@ -97,7 +100,7 @@
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
-            <h2 class="catalog-item__page-title">cat energy pro 500 г</h2>
+            <h2 class="catalog-item__page-title">cat energy<br>pro 500 г</h2>
             <table class="catalog-item__table">
               <tr>
                 <td>Объём</td>
@@ -122,7 +125,7 @@
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
-            <h2 class="catalog-item__page-title">cat energy pro 500 г</h2>
+            <h2 class="catalog-item__page-title">cat energy<br>pro 500 г</h2>
             <table class="catalog-item__table">
               <tr>
                 <td>Объём</td>
@@ -147,7 +150,7 @@
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
-            <h2 class="catalog-item__page-title">cat energy pro 500 г</h2>
+            <h2 class="catalog-item__page-title">cat energy<br>pro 500 г</h2>
             <table class="catalog-item__table">
               <tr>
                 <td>Объём</td>
@@ -172,7 +175,7 @@
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
-            <h2 class="catalog-item__page-title">cat energy pro 500 г</h2>
+            <h2 class="catalog-item__page-title">cat energy<br>pro 500 г</h2>
             <table class="catalog-item__table">
               <tr>
                 <td>Объём</td>
@@ -197,7 +200,7 @@
           </div>
           <!-- продукт -->
           <div class="catalog-item__description">
-            <h2 class="catalog-item__page-title">cat energy pro 500 г</h2>
+            <h2 class="catalog-item__page-title">cat energy<br>pro 500 г</h2>
             <table class="catalog-item__table">
               <tr>
                 <td>Объём</td>
@@ -230,11 +233,15 @@
 
     <!--  блок футер -->
     <footer class="footer">
-      <h2 class="footer__title">CAT ENERGY</h2>
+
+      <a href="index.html" class="footer__logo-text">
+        <img src="img/logo-footer.svg" alt="CAT ENERGY" width="128" height="24">
+      </a>
+
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link-vk" href="#">
-            <img src="img/icon-vk.svg" width="16" height="16">
+            <img src="img/icon-vk.svg" width="22" height="12">
           </a>
         </li>
         <li class="footer__item">
@@ -244,14 +251,17 @@
         </li>
         <li class="footer__item">
           <a class="footer__link-fb" href="#">
-            <img src="img/icon-fb.svg" width="16" height="16">
+            <img src="img/icon-fb.svg" width="10" height="19">
           </a>
         </li>
       </ul>
       <div class="footer__copyright">
         <p>HTML Academy</p>
+        <a class="footer__logo" href="index.html">
+          <img src="img/htmlacademy.svg" width="27" height="34">
+        </a>
+
       </div>
-      <svg class="footer__logo" width="27" height="34"></svg>
       <!-- <div class="footer__logo"></div> -->
     </footer>
 

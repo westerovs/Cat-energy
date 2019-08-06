@@ -7,7 +7,7 @@
   outline: 1px dashed #000;
 }
 
-.top-bar {
+.header__top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +15,10 @@
   padding-bottom: 17px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.header-navigation {
+  max-width: 100%;
 }
 
 .header__toggle {
@@ -33,20 +37,20 @@
   flex-direction: column;
 }
 
-.header__item:first-child {
-  border-top: 1px dashed @border-light-gray;
-  height: 63px;
-}
-
 .header__item {
   height: 64px;
-  border-bottom: 1px dashed @border-light-gray;
+  border-bottom: 1px solid @border-light-gray;
+  padding: 1px 0;
   display: flex;
+    &:first-child {
+    border-top: 1px solid @border-light-gray;
+    height: 63px;
+  }
 }
 
 .header__nav-link {
   margin: auto;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
@@ -55,16 +59,25 @@
 
 
 
+//*********************************************************************************
+//************************************планшет**************************************
 
-//планшет
+
+
 @media screen and (min-width: 768px) {
   .header {
     width: 768px;
     display: flex;
+    padding-top: 15px;
   }
 
-  .top-bar {
-    padding: 20px 30px 0 30px;
+  .header__navigation{
+    margin-right: 30px;
+  }
+
+  .header__top-bar {
+    padding: 20px 0;
+    margin-left: 30px;
     box-sizing: border-box;
   }
 
@@ -83,7 +96,6 @@
 
   .header__navigation {
     width: 100%;
-    outline: 1px dashed #000;
   }
 
   .header__list {
@@ -99,24 +111,48 @@
 
   .header__item {
     border: none;
-    margin-right: 35px;
-  }
-
-  .header__item:last-child {
-    margin-right: 30px;
+    margin-left: 37px;
   }
 }
 
-// decstop
+
+
+//*********************************************************************************
+//************************************decstop**************************************
+
+
+
 @media screen and (min-width: 1440px) {
   .header {
     width: 1440px;
+    padding-top: 54px;
+    .padding-global(70px);
   }
 
-  .top-bar {
-    padding: 0 40px;
+  .header__top-bar {
+    outline: 1px dashed #000;
+    padding: 0px 0;
+    margin-left: 40px;
+    background-color: yellow;
   }
-  .header__item:last-child {
-    margin-right: 40px;
+
+  .header__navigation{
+    margin-right: 0px;
+    outline: 1px dashed #000;
+    position: relative;
+    z-index: 100;
   }
+
+  .header__list {
+    padding: 0px;
+  }
+
+  .header__item {
+    font-size: 20px;
+  }
+
+  .header__nav-link {
+    color: @white;
+  }
+
 }

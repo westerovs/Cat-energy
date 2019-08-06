@@ -1,27 +1,41 @@
 .catalog {
   background-color: @white;
+  .padding-global();
+  outline: 1px dashed #000;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .catalog__title {
-  margin: 0;
-  // padding: 29px 20px 37px;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  border-top: 1px solid @border-gray;
-  border-bottom: 1px solid @border-gray;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .catalog__list {
-  list-style-type: none;
-  .catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  padding-bottom: 25px;
+  outline: 1px dashed #000;
+  display: flex;
+  flex-wrap: wrap;
     .catalog-item__image {
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+     outline: 1px dashed 000;
     }
-  }
+}
+
+
+
+// .catalog-item__description {
+
+// }
+
+.catalog-item__page-title {
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .catalog-item__page-title {
@@ -63,4 +77,75 @@
 .show-all__button {
   background-color: @light-gray;
   color: @gray;
+}
+
+
+
+
+
+
+
+
+//*********************************************************************************
+//************************************планшет**************************************
+
+
+@media screen and (min-width: 768px) {
+
+  .catalog {
+    width: 768px;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    .padding-global(30px);
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+
+  .catalog__item {
+    width: 324px;
+    flex-direction: column;
+    padding-bottom: 0px;
+    background-color: @gray;
+    outline: 1px dashed #000;
+      .catalog-item__image img{
+
+       outline: 1px dashed red;
+       display: flex;
+       margin: auto;
+        width: 161px;
+        height: 172px;
+      }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//*********************************************************************************
+//************************************decstop**************************************
+
+@media screen and (min-width: 1440px) {
+  .catalog {
+    width: 1440px;
+  }
 }

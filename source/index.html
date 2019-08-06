@@ -9,10 +9,11 @@
   </head>
   <body>
 
+
     <!--  меню -->
     <header class="header">
       <!-- лого -->
-      <div class="top-bar">
+      <div class="header__top-bar">
         <a href="index.html">
           <img class="header__logo" src="img/logo-logo-mobile.svg" alt="CAT ENERGY" width="33" height="38">
         </a>
@@ -36,20 +37,34 @@
       </nav>
     </header>
 
+
     <main>
 
       <!-- экран Превью -->
       <section class="preview">
-        <h1 class="preview__title">Функциональное питание для котов</h1>
-        <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
-        <img class="preview__logo" src="img/index-can-mobile@1x.png" alt="CAT ENERGY" width="280" height="270" >
-        <!-- кнопка переход на страницу подбор программы -->
-        <a class="button preview__button" href="#">Подобрать программу</a>
+        <div class="preview__wrapper">
+          <h1 class="preview__title">Функциональное питание для котов</h1>
+          <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
+
+
+<!--           <picture>
+            <source media="(min-width: 1300px)" srcset="../../img/products/index-can-desktop@1x.png, ../../img/products/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="../../img/products/index-can-tablet@1x.jpg, ../../img/products/index-can-tablet@2x.jpg 2x">
+            <img class="landing__promo-image" src="../../img/products/index-can-mobile@1x.png" srcset="../../img/products/index-can-mobile@2x.png 2x" alt="promo image">
+          </picture> -->
+
+
+          <img class="preview__logo" src="img/index-can-mobile@1x.png" alt="CAT ENERGY" width="280" height="270" >
+          <!-- кнопка переход на страницу подбор программы -->
+          <a class="button preview__button" href="#">Подобрать программу</a>
+        </div>
       </section>
+
 
       <!-- экран Похудение/Масса -->
       <section class="categories">
         <ul class="categories__list">
+
           <!-- похудение -->
           <li class="categories__item">
             <div class="categories__img">
@@ -65,6 +80,7 @@
               <div class="categories__arrow"></div>
             </a>
           </li>
+
           <!-- масса -->
           <li class="categories__item">
             <div class="categories__img">
@@ -77,13 +93,20 @@
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
             </div>
-            <a class="categories__link" href="#">Каталог slim
+            <a class="categories__link" href="#">Каталог pro
               <div class="categories__arrow"></div>
             </a>
           </li>
         </ul>
       </section>
-
+      <!--
+      // Позиционирование
+      // Блочная модель
+      // Типографика
+      // Оформление
+      // Анимация
+      // Разное
+      -->
 
       <!-- 3 экран Как это работает -->
       <section class="advantage">
@@ -177,22 +200,19 @@
       <img class="contacts__map" src="img/bg-map-mobile@1x.png"></img>
     </div>
 
-      <!--
-      // Позиционирование
-      // Блочная модель
-      // Типографика
-      // Оформление
-      // Анимация
-      // Разное
-      -->
+
 
     <!--  блок футер -->
     <footer class="footer">
-      <img class="footer__logo-text" src="img/logo-footer.svg" alt="CAT ENERGY">
+
+      <a href="index.html" class="footer__logo-text">
+        <img src="img/logo-footer.svg" alt="CAT ENERGY" width="128" height="24">
+      </a>
+
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link-vk" href="#">
-            <img src="img/icon-vk.svg" width="16" height="16">
+            <img src="img/icon-vk.svg" width="22" height="12">
           </a>
         </li>
         <li class="footer__item">
@@ -202,14 +222,17 @@
         </li>
         <li class="footer__item">
           <a class="footer__link-fb" href="#">
-            <img src="img/icon-fb.svg" width="16" height="16">
+            <img src="img/icon-fb.svg" width="10" height="19">
           </a>
         </li>
       </ul>
       <div class="footer__copyright">
-        <p>HTML Academy</p>
+        <a class="footer__link-academy" href="#">HTML Academy</a>
+        <a class="footer__logo" href="index.html">
+          <img src="img/htmlacademy.svg" width="27" height="34">
+        </a>
+
       </div>
-      <svg class="footer__logo" width="27" height="34"></svg>
       <!-- <div class="footer__logo"></div> -->
     </footer>
 
