@@ -1,88 +1,109 @@
 .catalog {
-  background-color: @white;
-  .padding-global();
-  outline: 1px dashed #000;
-  width: 320px;
   margin: 0 auto;
+  width: 320px;
+  background-color: @white;
 }
 
 .catalog__title {
+  padding: 15px 20px 27px;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 25px;
 }
 
 .catalog__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
-.catalog__item {
-  padding-bottom: 25px;
-  outline: 1px dashed #000;
+.catalog-item {
+  padding-bottom: 24px;
+  border-left: 1px solid @border-gray;
+  border-right: 1px solid @border-gray;
+  border-top: 1px solid @border-gray;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-    .catalog-item__image {
-     outline: 1px dashed 000;
-    }
 }
 
+.catalog-item__image {
+  img {
+    background-repeat: no-repeat;
+    background-position: center;
+    // margin-left: 20px;
+  }
+}
 
-
-// .catalog-item__description {
-
-// }
-
-.catalog-item__page-title {
-  padding-top: 3px;
-  padding-bottom: 3px;
+.catalog-item__description {
+    min-width: 140px;
 }
 
 .catalog-item__page-title {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  width: 75px;
+  margin-top: 24px;
   font-size: 16px;
   font-weight: 400;
   color: @black;
   text-transform: uppercase;
 }
 
-.catalog-item__table {
-  // width: 100%;
-  padding: 0;
-  border-collapse: collapse;
-  line-height: 16px;
+  // таблица
+  .catalog-item__table {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
   .arial();
-  td{
-    font-size: 12px;
-    color: @gray;
+    td{
+      width: 100%;
+      font-size: 12px;
+      &:nth-child(even){
+        text-align: right;
+      }
+    }
   }
+
+//раздел показать ещё
+
+//плюс
+
+.show-all {
+  padding: 26px 0 22px;
+  border: 1px solid @border-gray;
 }
 
 .show-all__icon {
+  padding-bottom: 20px;
   display: block;
-  background-image: url(../../img/icon-plus-mobile.svg);
-  background-repeat: no-repeat;
+  margin: 0 auto;
   width: 30px;
   height: 30px;
+  background-image: url(../../img/icon-plus-mobile.svg);
+  background-repeat: no-repeat;
   opacity: 0.2;
 }
 
-.show-all__paragraph {
-  font-size: 12px;
-  color: @gray;
+.show-all__description {
+  text-align: center;
+  .catalog-item__page-title {
+    width: 100%;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
 }
 
+.show-all__paragraph {
+  .arial();
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 21px;
+  color: @gray;
+}
 
 .show-all__button {
   background-color: @light-gray;
   color: @gray;
+  text-transform: uppercase;
 }
-
-
-
-
-
 
 
 
@@ -94,36 +115,66 @@
 
   .catalog {
     width: 768px;
-    // flex-direction: row;
-    // flex-wrap: wrap;
     .padding-global(30px);
   }
 
+  .catalog__title {
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 164px;
+  }
+
+  // ul
   .catalog__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
   }
 
-
-  .catalog__item {
+  // li
+  .catalog-item {
     width: 324px;
-    flex-direction: column;
-    padding-bottom: 0px;
-    background-color: @gray;
-    outline: 1px dashed #000;
-      .catalog-item__image img{
-
-       outline: 1px dashed red;
-       display: flex;
-       margin: auto;
-        width: 161px;
-        height: 172px;
-      }
+    padding: 165px 38px 40px;
+    margin-bottom: 140px;
+    background-color: @light-gray;
   }
 
+  //изображение на мобил слева
+  .catalog-item__image img{
+    display: none;
+  }
+
+  //вся часть каталога с описинием и таблицей
+  .catalog-item__description {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 1px dashed #000;
+  }
+
+  //правая часть каталога заголовок
+  .catalog-item__page-title {
+    margin: 0;
+    align-self: center;
+    padding: 0;
+  }
+
+  //таблица
+  .catalog-item__table {
+    display: flex;
+    flex-direction: column;
+    .arial();
+    td{
+      width: 100%;
+      font-size: 16px;
+      border-bottom: 1px solid @border-gray;
+      padding-bottom: 7px;
+    }
+  }
+
+  .catalog-item__button {
+    margin-top: 17px;
+  }
 
 }
 
