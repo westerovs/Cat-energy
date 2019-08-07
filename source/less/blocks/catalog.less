@@ -29,7 +29,6 @@
   img {
     background-repeat: no-repeat;
     background-position: center;
-    // margin-left: 20px;
   }
 }
 
@@ -64,7 +63,6 @@
 //раздел показать ещё
 
 //плюс
-
 .show-all {
   padding: 26px 0 22px;
   border: 1px solid @border-gray;
@@ -111,12 +109,12 @@
 //************************************планшет**************************************
 
 
+
 @media screen and (min-width: 768px) {
 
   .catalog {
     width: 768px;
     .padding-global(30px);
-    outline: 1px dashed #000;
   }
 
   .catalog__title {
@@ -138,16 +136,14 @@
     margin-bottom: 140px;
     border: 0;
     background-color: @light-gray;
-    outline: 1px dashed #000;
+      &:nth-last-child(2)  {
+      margin-bottom: 0;
+    }
   }
 
-  .catalog__item:nth-last-child(2)  {
-    margin-bottom: 0;
-  }
 
   //изображение на мобил слева
   .catalog-item__image{
-    background-image: url(../../);
     img{
       display: none;
     }
@@ -229,25 +225,14 @@
     line-height: 20px;
     width: 170px;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 //*********************************************************************************
 //************************************decstop**************************************
+
+
 
 @media screen and (min-width: 1440px) {
   .catalog {
@@ -263,4 +248,14 @@
     width: 246px;
   }
 
+  .catalog__item:nth-last-child(1),
+  .catalog__item:nth-last-child(2),
+  .catalog__item:nth-last-child(3) {
+    margin-bottom: 0;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    .padding-global(40px);
+  }
 }
