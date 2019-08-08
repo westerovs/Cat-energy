@@ -1,9 +1,36 @@
-// Начните вёрстку вашего проекта с помощью препроцессора:
+html {
+box-sizing: border-box;
+}
 
-// задайте фоновые цвета и фоновые изображения для блоков;
-// параметры текста: шрифты, размеры шрифта, межстрочные расстояния,
-// цвет текста;
-// добавьте внутренние и внешние отступы и обводки для крупных сеточных блоков.
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 // Позиционирование
 // Блочная модель
@@ -26,12 +53,10 @@
 @import 'blocks/before-after.less';
 // Блок футер
 @import 'blocks/footer.less';
-//кнопка
+// //кнопка
 @import 'blocks/button.less';
-//заголовок
+// //заголовок
 @import 'blocks/page-title.less';
-
-
 // Блок каталог
 @import 'blocks/catalog.less';
 
@@ -51,16 +76,14 @@
   font-display: swap;
 }
 
-a {
-  text-decoration: none;
-}
-
 @white: #ffffff;
 @black: #111111;
 @gray: #444444;
 @green: #68B738;
 @light-gray: #f2f2f2;
 @border-gray: #cdcdcd;
+@border-footer: #d9d9d9;
+@border-light-gray: #e6e6e6;
 
 .arial() {
   font-family: "Arial", "Tahoma", sans-serif;
@@ -78,50 +101,3 @@ body {
   padding-left: @value-padding;
   padding-right: @value-padding;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

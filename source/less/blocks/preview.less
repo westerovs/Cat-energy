@@ -1,23 +1,150 @@
 .preview{
-  background-color: @white;
+  margin: 0 auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-image: url(../../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 
 .preview__title {
-  margin-bottom: 23px;
-  margin-top: 0;
+  padding: 0;
+  margin: 31px 0 25px 0;
   font-weight: 400;
   font-size: 36px;
-  line-height: 0.9;
+  line-height: 36px;
   color: @white;
+  text-align: center;
 }
 
 .preview__subtitle {
-  margin-bottom: 30px;
-  font-weight: 300;
+  padding: 0;
+  margin: 0 0 28px 0;
+  font-weight: 100;
   font-size: 14px;
-  line-height: 0.9;
+  text-transform: uppercase;
+  text-align: center;
   color: @white;
 }
 
+.preview__logo {
+  align-self: center;
+}
+
+.preview__button {
+  margin-top: 5px;
+}
+
+
+//*********************************************************************************
+//************************************планшет**************************************
+
+
+@media screen and (min-width: 768px) {
+
+  .preview {
+    width: 768px;
+    background-image: none;
+  }
+
+  .preview__wrapper {
+    position: relative;
+    margin-left: 117px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .preview__title,
+  .preview__subtitle {
+    color: @black;
+  }
+
+  .preview__title {
+    padding-top: 10px;
+    width: 415px;
+    margin-top: 12px;
+    margin-bottom: 42px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .preview__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    // z-index: 10;
+  }
+
+  .preview__logo {
+    //временный паддинг, т.к картинку подключу позже
+    //для удобства работы с макетом в наложении
+    padding-bottom: 309px;
+  }
+
+  .preview .preview__button {
+    position: absolute;
+    top: 251px;
+    width: 245px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+}
+
+
+//*********************************************************************************
+//************************************decstop**************************************
+
+
+@media screen and (min-width: 1440px) {
+
+  .preview {
+    .padding-global(70px);
+    padding-bottom: 141px;
+    margin-bottom: 81px;
+    width: 1440px;
+    background-position: right top;
+    z-index: 99;
+  }
+
+  .preview__wrapper {
+    position: relative;
+    margin-left: 120px;
+    margin-top: 82px;
+    min-height: 355px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .preview__wrapper::before {
+    position: absolute;
+    content: "";
+    width: 720px;
+    height: 696px;
+    top: -200px;
+    right: -70px;
+    background-image: url(../../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .preview__logo {
+    position: absolute;
+    padding: 0;
+    width: 515px;
+    height: 499px;
+    margin: -59px 0px 0px 75px;
+  }
+
+  .preview .preview__button {
+    top: 256px;
+  }
+}
