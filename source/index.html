@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -11,13 +12,15 @@
 
     <!--  меню -->
     <header class="header">
-      <a href="index.html">
-        <img class="header__logo" src="img/logo-logo mobile.svg" alt="CAT ENERGY" width="33" height="38">
-      </a>
-      <img class="header__logo-text" src="img/logo-logo-mobile-header.svg" alt="СAT ENERGY" width="101" height="18">
-      <!-- мобильная кнопка показать-скрыть - добавлю если буду успевать сдать проект-->
-      <!-- <button class="header__toggle" type="button"></button> -->
-      <!-- навигация меню-->
+      <!-- лого -->
+      <div class="header__top-bar">
+        <a href="index.html">
+          <img class="header__logo" src="img/logo-logo-mobile.svg" alt="CAT ENERGY" width="33" height="38">
+        </a>
+        <img class="header__logo-text" src="img/logo-logo-mobile-header.svg" alt="СAT ENERGY" width="101" height="18">
+        <span class="header__toggle"></span>
+      </div>
+      <!-- навигация -->
       <nav class="header__navigation" >
         <!-- список меню -->
         <ul class="header__list">
@@ -36,13 +39,16 @@
 
 
     <main>
+
       <!-- экран Превью -->
       <section class="preview">
-        <h1 class="preview__title">Функциональное питание для котов</h1>
-        <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
-        <img class="preview__logo" src="img/index-can-mobile@1x.png" alt="CAT ENERGY" width="280" height="270" >
-        <!-- кнопка переход на страницу подбор программы -->
-        <a class="button preview__button" href="#">Подобрать программу</a>
+        <div class="preview__wrapper">
+          <h1 class="preview__title">Функциональное питание для котов</h1>
+          <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
+          <img class="preview__logo" src="img/index-can-mobile@1x.png" alt="CAT ENERGY" width="280" height="270" >
+          <!-- кнопка переход на страницу подбор программы -->
+          <a class="button preview__button" href="#">Подобрать программу</a>
+        </div>
       </section>
 
 
@@ -76,7 +82,7 @@
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
             </div>
-            <a class="categories__link" href="#">Каталог slim
+            <a class="categories__link" href="#">Каталог pro
               <div class="categories__arrow"></div>
             </a>
           </li>
@@ -177,13 +183,16 @@
     </div>
 
 
+
     <!--  блок футер -->
     <footer class="footer">
-      <h2 class="footer__title">CAT ENERGY</h2>
+      <a href="index.html" class="footer__logo-text">
+        <img src="img/logo-footer.svg" alt="CAT ENERGY" width="128" height="24">
+      </a>
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link-vk" href="#">
-            <img src="img/icon-vk.svg" width="16" height="16">
+            <img src="img/icon-vk.svg" width="22" height="12">
           </a>
         </li>
         <li class="footer__item">
@@ -193,16 +202,19 @@
         </li>
         <li class="footer__item">
           <a class="footer__link-fb" href="#">
-            <img src="img/icon-fb.svg" width="16" height="16">
+            <img src="img/icon-fb.svg" width="10" height="19">
           </a>
         </li>
       </ul>
       <div class="footer__copyright">
-        <p>HTML Academy</p>
+        <a class="footer__link-academy" href="#">HTML Academy</a>
+        <a class="footer__logo" href="index.html">
+          <img src="img/htmlacademy.svg" width="27" height="34">
+        </a>
       </div>
-      <svg class="footer__logo" width="27" height="34"></svg>
-      <!-- <div class="footer__logo"></div> -->
     </footer>
+
+    </main>
 
 
   </body>
