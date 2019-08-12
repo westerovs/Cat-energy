@@ -2,11 +2,11 @@
   margin: 0 auto;
   width: 320px;
   background-color: @white;
+  padding-bottom: 100px;
 }
 
 .catalog__title {
-  padding: 15px 20px 27px;
-  margin: 0 auto;
+  padding: 0px 20px 16px;
 }
 
 .catalog__list {
@@ -16,16 +16,16 @@
 }
 
 .catalog-item {
-  padding-bottom: 24px;
-  border-left: 1px solid @border-gray;
-  border-right: 1px solid @border-gray;
-  border-top: 1px solid @border-gray;
+  padding: 0 20px 24px 20px;
+  border-top: 1px solid @border-catalog;
+  min-height: 209px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
 .catalog-item__image {
+  width: 140px;
+  font-size: 0;
   img {
     background-repeat: no-repeat;
     background-position: center;
@@ -33,43 +33,51 @@
 }
 
 .catalog-item__description {
-    min-width: 140px;
+  padding-top: 21px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .catalog-item__page-title {
-  width: 75px;
-  margin-top: 24px;
+  margin-bottom: 13px;
+  width: 80px;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   color: @black;
   text-transform: uppercase;
 }
 
-  // таблица
-  .catalog-item__table {
-  margin-top: 14px;
+// таблица
+.catalog-item__table {
+  width: 140px;
   display: flex;
+  border-collapse: collapse;
   flex-direction: column;
-  .arial();
-    td{
-      width: 100%;
-      font-size: 12px;
-      &:nth-child(even){
-        text-align: right;
-      }
+  .second-font();
+  td {
+    width: 140px;
+    padding: 0;
+    .second-font();
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    &:nth-child(even) {
+    text-align: right;
     }
   }
+}
 
 //раздел показать ещё
-
-//плюс
 .show-all {
-  padding: 26px 0 22px;
-  border: 1px solid @border-gray;
+  padding: 24px 0 25px;
+  min-width: 209px;
+  border-bottom: 1px solid @border-catalog;
 }
 
 .show-all__icon {
-  padding-bottom: 20px;
   display: block;
   margin: 0 auto;
   width: 30px;
@@ -85,22 +93,23 @@
     width: 100%;
     line-height: 20px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 8px;
   }
 }
 
 .show-all__paragraph {
-  .arial();
+  .second-font();
   font-size: 12px;
   line-height: 16px;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
   color: @gray;
 }
 
 .show-all__button {
+  height: 40px;
   background-color: @light-gray;
   color: @gray;
-  text-transform: uppercase;
 }
 
 
@@ -113,14 +122,15 @@
 @media screen and (min-width: 768px) {
 
   .catalog {
+    margin-top: 70px;
     width: 768px;
     .padding-global(30px);
   }
 
   .catalog__title {
     font-size: 60px;
-    padding: 49px 0px 0px 0px;
-    padding-bottom: 164px;
+    padding:  0px;
+    margin-bottom: 177px;
   }
 
   // ul
@@ -131,48 +141,63 @@
 
   // li
   .catalog-item {
-    width: 324px;
-    padding: 140px 38px 40px;
+    position: relative;
+    padding: 0px 38px 0px 38px;
     margin-bottom: 140px;
+    display: block;
+    width: 324px;
+    min-height: 431px;
     border: 0;
     background-color: @light-gray;
       &:nth-last-child(2)  {
       margin-bottom: 0;
     }
-  }
-
-
-  //изображение на мобил слева
-  .catalog-item__image{
-    img{
-      display: none;
+      &:nth-child(odd)
+        .catalog-item__image {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: -46px;
+    }
+      &:nth-child(even)
+        .catalog-item__image {
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: -82px;
     }
   }
 
+
   //вся часть каталога с описинием и таблицей
   .catalog-item__description {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    margin: 164px auto 32px auto;
+    width: 245px;
+    min-height: 155px;
+    display: block;
+    padding-top: 0px;
   }
 
   .catalog-item__page-title {
-    align-self: center;
+    margin: 0 auto 19px auto;
+    padding: 0;
+    width: 130px;
+    text-align: center;
+    text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    width: 150px;
-    margin-bottom: 18px;
-    text-align: center;
-    text-transform: uppercase;
   }
 
   //таблица
   .catalog-item__table {
+    width: 100%;
+    display: block;
     margin: 0;
+    padding: 0;
     td{
-      padding: 7px 0 6px 0;
+      margin: 0px;
+      padding: 6px 0px 9px 0px;
       border-bottom: 1px solid @border-gray;
       font-size: 16px;
       line-height: 16px;
@@ -180,14 +205,16 @@
   }
 
   .catalog-item__button {
-    margin-top: 31px;
+    margin: 0px;
+    width: 249px;
+    height: 40px;
   }
 
-  //плюс
+  //блок показать ещё
   .show-all {
     padding: 54px 0 39px 0;
     width: 324px;
-    border: 1px solid @border-gray;
+    border: 1px solid @border-catalog;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -201,14 +228,14 @@
 
   .show-all__description {
     padding: 0;
-    margin: 0px 0px 45px 0px;
+    margin: 0px 0px 37px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     .catalog-item__page-title {
       align-self: flex-start;
       padding: 0px ;
-      margin: 18px 0px 26px 0px;
+      margin: 0px 0px 28px 0px;
       width: 150px;
       font-size: 20px;
       line-height: 20px;
@@ -220,10 +247,15 @@
   .show-all__paragraph {
     margin: auto;
     padding: 0;
+    .second-font();
     font-size: 16px;
-    font-family: "Arial",sans-serif;
-    line-height: 20px;
+    line-height: 16px;
+    font-weight: 400;
     width: 170px;
+  }
+
+  .show-all__button {
+    width: 249px;
   }
 }
 
@@ -238,28 +270,55 @@
   .catalog {
     width: 1440px;
     .padding-global(70px);
+    padding-top: 5px;
+  }
+
+  .catalog__title {
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    .padding-global(40px);
   }
 
   .catalog__list {
     padding: 0 40px;
+    justify-content: space-between;
+    margin-top: 1px solid transparent;
+
   }
 
   .catalog-item {
-    width: 246px;
-  }
-
-  .catalog__item:nth-last-child(1),
-  .catalog__item:nth-last-child(2),
-  .catalog__item:nth-last-child(3) {
+    margin-top: 140px;
     margin-bottom: 0;
+    width: 245px;
   }
 
-  .catalog__title {
-    font-size: 60px;
-    .padding-global(40px);
+  .catalog-item__description {
+    margin-right: 0;
+    width: 100%;
   }
 
+  .catalog-item__button {
+    width: 169px;
+  }
+
+  // блок показать ещё
+  .show-all {
+    margin-top: 140px;
+    margin-bottom: 0;
+    width: 245px;
+    min-height: 431px;
+  }
+
+  .show-all__button {
+    width: 169px;
+  }
+
+  .header__item
   .header__nav-link {
-      color: #000;
+    color: @black;
   }
+
 }
