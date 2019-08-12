@@ -6,6 +6,13 @@ box-sizing: border-box;
 box-sizing: inherit;
 }
 
+picture {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+}
+
 ul,
 li,
 p,
@@ -83,18 +90,19 @@ img {
 @light-gray: #f2f2f2;
 @border-gray: #cdcdcd;
 @border-footer: #d9d9d9;
+@border-catalog: #ededed;
 @border-light-gray: #e6e6e6;
 
-.arial() {
+.second-font() {
   font-family: "Arial", "Tahoma", sans-serif;
 }
 
-.oswald() {
+.font-main() {
   font-family: "Oswald", "Arial", sans-serif;
 }
 
 body {
-  .oswald();
+  .font-main();
 }
 
 .padding-global(@value-padding: 20px;) {

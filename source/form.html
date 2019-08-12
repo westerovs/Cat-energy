@@ -13,9 +13,13 @@
     <!--  меню -->
     <header class="header">
       <!-- лого -->
-      <div class="header__top-bar">
-        <a href="index.html">
-          <img class="header__logo" src="img/logo-logo-mobile.svg" alt="CAT ENERGY" width="33" height="38">
+      <div class="header__container-logo">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)"  srcset="img/logo-tablet.svg">
+            <img src="img/logo-logo-mobile.svg" width="33" height="38">
+          </picture>
         </a>
         <img class="header__logo-text" src="img/logo-logo-mobile-header.svg" alt="СAT ENERGY" width="101" height="18">
         <span class="header__toggle"></span>
@@ -24,7 +28,7 @@
       <nav class="header__navigation" >
         <!-- список меню -->
         <ul class="header__list">
-          <li class="header__item">
+          <li class="header__item header__item--active">
             <a class="header__nav-link" href="index.html">Главная</a>
           </li>
           <li class="header__item">
