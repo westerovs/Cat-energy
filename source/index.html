@@ -50,7 +50,11 @@
         <div class="preview__wrapper">
           <h1 class="preview__title">Функциональное питание для котов</h1>
           <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
-          <img class="preview__logo" src="img/index-can-mobile@1x.png" alt="CAT ENERGY" width="280" height="270" >
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <img class="preview__logo" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="promo image">
+          </picture>
           <!-- кнопка переход на страницу подбор программы -->
           <a class="button preview__button" href="#">Подобрать программу</a>
         </div>
@@ -60,11 +64,11 @@
       <!-- экран Похудение/Масса -->
       <section class="categories">
         <ul class="categories__list">
+
           <!-- похудение -->
           <li class="categories__item">
-            <div class="categories__img">
-              <svg src="img/icon-cat-pro.svg" width="35" height="49" alt="похудение"></svg>
-            </div>
+            <div class="categories__img-backroundg"></div>
+            <img class="categories__img" src="img/icon-cat-slim.svg" width="35" height="49" alt="похудение">
             <h2 class="categories__title">Похудение</h2>
             <div class="categories__container">
               <p>
@@ -75,11 +79,11 @@
               <div class="categories__arrow"></div>
             </a>
           </li>
+
           <!-- масса -->
           <li class="categories__item">
-            <div class="categories__img">
-              <svg src="img/icon-cat-slim.svg" width="67" height="28" alt="набор массы"></svg>
-            </div>
+            <div class="categories__img-backroundg"></div>
+            <img class="categories__img" src="img/icon-cat-pro.svg" width="67" height="28" alt="набор массы">
             <h2 class="categories__title">Набор массы</h2>
             <div class="categories__container">
               <p>
@@ -91,6 +95,7 @@
               <div class="categories__arrow"></div>
             </a>
           </li>
+
         </ul>
       </section>
 
@@ -191,9 +196,11 @@
 
     <!--  блок футер -->
     <footer class="footer">
+
       <a href="index.html" class="footer__logo-text">
         <img src="img/logo-footer.svg" alt="CAT ENERGY" width="128" height="24">
       </a>
+
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link-vk" href="#">
@@ -216,7 +223,9 @@
         <a class="footer__logo" href="index.html">
           <img src="img/htmlacademy.svg" width="27" height="34">
         </a>
+
       </div>
+      <!-- <div class="footer__logo"></div> -->
     </footer>
 
     </main>

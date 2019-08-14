@@ -1,18 +1,21 @@
 .preview{
-  margin: 0 auto;
+  margin: 0 auto 22px auto;
   width: 320px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   background-image: url(../../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
 }
 
+.preview__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0 0 0;
+}
+
 .preview__title {
   padding: 0;
-  margin: 31px 0 25px 0;
-  font-weight: 400;
+  margin: 0px 0 25px 0;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   color: @white;
   text-align: center;
@@ -20,20 +23,27 @@
 
 .preview__subtitle {
   padding: 0;
-  margin: 0 0 28px 0;
-  font-weight: 100;
+  margin: 0px 0px 29px 0px;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
   text-transform: uppercase;
   text-align: center;
   color: @white;
 }
 
+picture {
+  display: flex;
+  flex-direction: column;
+}
+
 .preview__logo {
-  align-self: center;
+align-self: center;
+margin-bottom: 3px;
 }
 
 .preview__button {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 
@@ -44,14 +54,17 @@
 @media screen and (min-width: 768px) {
 
   .preview {
+    margin-top: 30px;
+    margin-bottom: 0;
     width: 768px;
     background-image: none;
   }
 
   .preview__wrapper {
     position: relative;
-    margin-left: 117px;
-    margin-top: 32px;
+    .padding-global(30px);
+    // margin-left: 117px;
+    // margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,12 +73,11 @@
   .preview__title,
   .preview__subtitle {
     color: @black;
+    margin-left: 87px;
   }
 
   .preview__title {
-    padding-top: 10px;
     width: 415px;
-    margin-top: 12px;
     margin-bottom: 42px;
     font-size: 60px;
     line-height: 60px;
@@ -76,18 +88,19 @@
     font-size: 20px;
     line-height: 20px;
     position: relative;
-    // z-index: 10;
   }
 
   .preview__logo {
-    //временный паддинг, т.к картинку подключу позже
-    //для удобства работы с макетом в наложении
-    padding-bottom: 309px;
+  margin-top: -9px;
+  width: 709px;
+  height: 609px;
   }
 
-  .preview .preview__button {
+  .preview
+  .preview__button {
     position: absolute;
-    top: 251px;
+    top: 257px;
+    left: 120px;
     width: 245px;
     height: 52px;
     display: flex;
@@ -105,9 +118,11 @@
 @media screen and (min-width: 1440px) {
 
   .preview {
+    min-height: 553px;
     .padding-global(70px);
-    padding-bottom: 141px;
-    margin-bottom: 81px;
+    // padding-bottom: 0px;
+    // margin-bottom: 0px;
+    margin-bottom: 80px;
     width: 1440px;
     background-position: right top;
     z-index: 99;
@@ -115,36 +130,51 @@
 
   .preview__wrapper {
     position: relative;
-    margin-left: 120px;
-    margin-top: 82px;
-    min-height: 355px;
+    margin-left: 0px;
+    padding: 0;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
   }
 
+  // кот фон
   .preview__wrapper::before {
     position: absolute;
     content: "";
     width: 720px;
     height: 696px;
-    top: -200px;
-    right: -70px;
+    top: -143px;
+    right: -69px;
     background-image: url(../../img/index-background-desktop@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
   }
 
+  .preview__title {
+    margin: 80px 0px 40px 120px;
+  }
+
+  .preview__subtitle {
+    margin: 0px 0px 0px 120px;
+  }
+
   .preview__logo {
     position: absolute;
     padding: 0;
-    width: 515px;
+    top: 8px;
+    left: 490px;
+    width: 552px;
     height: 499px;
-    margin: -59px 0px 0px 75px;
+    // margin: -59px 0px 0px 75px;
   }
 
   .preview .preview__button {
-    top: 256px;
-  }
+    top: 313px;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    }
 }
