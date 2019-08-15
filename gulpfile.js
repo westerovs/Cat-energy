@@ -26,7 +26,7 @@ gulp.task("css", function () {
       autoprefixer()
   ]))
   .pipe(csso())
-  .pipe(rename("style.min.css"))
+  .pipe(rename("style.css"))
   .pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/css"));
 });
@@ -75,6 +75,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
+    "source/css/normalize.css",
     "source/*.ico"
   ], {
     base: "source"
