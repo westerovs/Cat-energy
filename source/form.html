@@ -10,7 +10,7 @@
   <body>
 
 
-    <!--  меню -->
+    <!--  ***меню*** -->
     <header class="header">
       <!-- лого -->
       <div class="header__container-logo">
@@ -42,16 +42,14 @@
     </header>
 
 
+    <!-- ***форма*** -->
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="form__title">Подбор программы</h1>
+      <h2 class="form__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</h2>
 
-<!-- ********************************************************************************** -->
-
-
-
-    <form class="program" action="https://echo.htmlacademy.ru" method="post">
-      <h1 class="program__header block-title">Подбор программы</h1>
-      <p class="program__prolog">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <div class="program__general">
-        <fieldset class="program__main field">
+      <!-- подбор программы -->
+      <div class="form__selection">
+        <fieldset class="form__main field">
           <div class="field__row field__row--name">
             <label class="field__label required" for="cat-name">Имя:</label>
             <input class="field__input field__input--box" type="text" placeholder="Барсик" id="cat-name" name="cat-name" required="">
@@ -65,18 +63,22 @@
             <input class="field__input field__input--box" type="number" placeholder="7" id="cat-age" name="cat-age">
           </div>
         </fieldset>
-        <fieldset class="program__type field">
-          <input class="field__input program__radio" type="radio" name="program-type" id="weight-loss" value="weight-loss" checked="">
-          <label class="field__label program__radio-label" for="weight-loss">Похудение</label>
-          <input class="field__input program__radio" type="radio" name="program-type" id="weight-plus" value="weight-plus">
-          <label class="field__label program__radio-label" for="weight-plus">Набор массы</label>
-          <input class="field__input program__radio" type="radio" name="program-type" id="need-help" value="need-help" disabled="">
-          <label class="field__label program__radio-label" for="need-help">Не знаю (нужен ваш совет)</label>
+
+        <!-- радио кнопки -->
+        <fieldset class="form__type field">
+          <input class="field__input form__radio" type="radio" name="form-type" id="weight-loss" value="weight-loss" checked="">
+          <label class="field__label form__radio-label" for="weight-loss">Похудение</label>
+          <input class="field__input form__radio" type="radio" name="form-type" id="weight-plus" value="weight-plus">
+          <label class="field__label form__radio-label" for="weight-plus">Набор массы</label>
+          <input class="field__input form__radio" type="radio" name="form-type" id="need-help" value="need-help" disabled="">
+          <label class="field__label form__radio-label" for="need-help">Не знаю (нужен ваш совет)</label>
         </fieldset>
       </div>
-      <fieldset class="program__contacts field">
-        <legend class="field__legend program__subtitle">Контактные данные (владельца кота)</legend>
-        <div class="program__contacts-wrapper">
+
+      <!-- контакты -->
+      <fieldset class="form__contacts field">
+        <legend class="field__legend form__subtitle">Контактные данные (владельца кота)</legend>
+        <div class="form__contacts-wrapper">
           <div class="field__row email">
             <label class="field__label email__label required" for="email">E-mail:</label>
             <input class="field__input email__input field__input--box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required="">
@@ -87,55 +89,54 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="program__comment field">
-        <legend class="field__legend program__subtitle">Комментарий</legend>
-        <textarea class="field__input program__comment-area field__input--box" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота">
+      <fieldset class="form__comment field">
+        <legend class="field__legend form__subtitle">Комментарий</legend>
+        <textarea class="field__input form__comment-area field__input--box" name="comment" id="comment" cols="30" rows="8" placeholder="Расскажите обо всех повадках кота">
         </textarea>
       </fieldset>
-      <fieldset class="program__additional additional field">
-        <legend class="field__legend program__subtitle">Дополнительно</legend>
 
-        <div class="program__wrapper">
-          <input class="field__input additional__input" type="checkbox" name="sweetener" id="sweetener">
-          <label class="field__label additional__label" for="sweetener">Сахарозаменитель</label>
-          <input class="field__input additional__input" type="checkbox" name="water" id="water">
-          <label class="field__label additional__label" for="water">Питьевая вода</label>
-          <input class="field__input additional__input" type="checkbox" name="milk" id="milk" disabled="">
-          <label class="field__label additional__label" for="milk">Молоко</label>
-          <input class="field__input additional__input" type="checkbox" name="vitamins" id="vitamins">
-          <label class="field__label additional__label" for="vitamins">Витамины</label>
+      <!-- чекбоксы дополнительно  -->
+      <fieldset class="form__additional additional field">
+        <legend class="field__legend form__subtitle">Дополнительно</legend>
+
+        <div class="form__additional-wrapper">
+          <input class="additional__input" type="checkbox" name="sweetener" id="sweetener">
+          <label class="additional__label" for="sweetener">Сахарозаменитель</label>
+          <input class="additional__input" type="checkbox" name="water" id="water">
+          <label class="additional__label" for="water">Питьевая вода</label>
+          <input class="additional__input" type="checkbox" name="milk" id="milk" disabled="">
+          <label class="additional__label" for="milk">Молоко</label>
+          <input class="additional__input" type="checkbox" name="vitamins" id="vitamins">
+          <label class="additional__label" for="vitamins">Витамины</label>
         </div>
       </fieldset>
 
       <div class="required-note">* &mdash; Обязательные поля</div>
-      <button class="program__submit button" type="submit">Отправить заявку</button>
+      <button class="form__submit button" type="submit">Отправить заявку</button>
     </form>
 
 
-
-    <!-- карта/контакты -->
-    <section class="contacts">
-      <div class="contacts__invite invite-in-form">
-        <p class="contacts__left-col">
-          Приглашаем<br>к сотрудничеству дилеров!
+    <!-- ***карта/контакты*** -->
+    <div class="contacts">
+      <div class="contacts__container">
+        <h3 class="title-litle" >
+          Приглашаем к сотрудничеству дилеров!
+        </h3>
+      </div>
+      <div class="contacts__text">
+        <p>
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
-        <div class="contacts__right-col">ул. Большая Конюшенная, д. 19/8
-        <p class="contacts__wrap">Санкт-Петербург</p>
-        </div>
       </div>
-      <div class="contacts__map" id="map">
-      </div>
-    </section>
-
+      <img class="contacts__map" src="img/bg-map-mobile@1x.png">
+    </div>
 
 
     <!--  блок футер -->
     <footer class="footer">
-
       <a href="index.html" class="footer__logo-text">
         <img src="img/logo-footer.svg" alt="CAT ENERGY" width="128" height="24">
       </a>
-
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link-vk" href="#">
@@ -158,13 +159,14 @@
         <a class="footer__logo" href="index.html">
           <img src="img/htmlacademy.svg" width="27" height="34">
         </a>
-
       </div>
-      <!-- <div class="footer__logo"></div> -->
     </footer>
+
 
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
+
+
   </body>
 </html>

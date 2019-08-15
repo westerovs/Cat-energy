@@ -17,7 +17,6 @@ var include = require("posthtml-include");
 var del = require("del");
 
 
-// сжатие css в строчку
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -25,12 +24,11 @@ gulp.task("css", function () {
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
-    ]))
-    .pipe(csso())
-    .pipe(rename("fucking-style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+  ]))
+  .pipe(csso())
+  .pipe(rename("style.min.css"))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("build/css"));
 });
 
 // оптимизация картинок
@@ -74,14 +72,14 @@ gulp.task("html", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-  "source/fonts/**/*.{woff,woff2}",
-  "source/img/**",
-  "source/js/**",
-  "source/*.ico"
- ], {
- base: "source"
- })
- .pipe(gulp.dest("build"));
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+   })
+  .pipe(gulp.dest("build"));
 });
 
 //Очищаем папку build перед копированием
@@ -92,29 +90,29 @@ gulp.task("clean", function () {
 // ***
 // обновление в браузере
 gulp.task("server", function () {
- server.init({
- server: "build/"
- });
+  server.init({
+  server: "build/"
+  });
 
- gulp.watch("source/less/**/*.less", gulp.series("css"));
- gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
- gulp.watch("source/*.html", gulp.series("html", "refresh"));
-});
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+  });
 
 gulp.task("refresh", function (done) {
- server.reload();
- done();
+  server.reload();
+  done();
 });
 
 
 // build - запускает ПОСЛЕДОВАТЕЛЬНО другие задачи
 // сперва css и тд
 gulp.task("build", gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "sprite",
-  "html"
+ "clean",
+ "copy",
+ "css",
+ "sprite",
+ "html"
 ));
 
 /*
