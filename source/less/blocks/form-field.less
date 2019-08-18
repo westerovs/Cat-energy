@@ -1,0 +1,126 @@
+.form-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-field {
+    margin-bottom: 22px;
+  }
+}
+
+.form-field__control {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 13px 15px;
+  transition: 0.3s;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: @font-color-default;
+  font-size: 16px;
+  line-height: 18px;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:active ~ svg,
+  &:focus ~ svg {
+    fill: @bg-lightgreen;
+  }
+
+  &::-webkit-input-placeholder {
+    color: @font-color-default;
+  }
+
+  &:-ms-input-placeholder {
+    color: @font-color-default;
+  }
+
+  &::-ms-input-placeholder {
+    color: @font-color-default;
+  }
+
+  &::placeholder {
+    color: @font-color-default;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  &:focus:invalid ~ svg {
+    fill: #ff8282;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__control {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form-field__control--icon {
+  padding: 13px 45px 13px 15px;
+  background-size: 18px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__control--icon {
+    padding: 10px 45px 10px 20px;
+  }
+}
+
+.form-field__text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  flex-shrink: 0;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.form-field.form-field--ident {
+  margin-bottom: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field.form-field--ident {
+    margin-bottom: 22px;
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+@media (min-width: @desktop-width) {
+  .form-field__icon {
+    right: 20px;
+  }
+}

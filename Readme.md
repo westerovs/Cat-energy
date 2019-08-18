@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Александр Вестеровский](https://up.htmlacademy.ru/adaptive/17/user/515875).
-* Наставник: `Александр Собакарь`.
+* Студент: [Егор Лимачев](https://up.htmlacademy.ru/adaptive/16/user/167879).
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
 
@@ -24,19 +24,19 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/515875-cat-energy-17) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/167879-cat-energy-16) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/34914832-c35d40a4-f92b-11e7-9614-ab300cc5cb31.png">
 
 Получится вот так:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/34914831-c33ad1cc-f92b-11e7-98e0-d3500db6a058.png">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808136-3a7ace00-a190-11e9-884f-24621e62b29a.jpg">
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/34914833-c3757cf0-f92b-11e7-9512-365f3e2a339f.png">
 
 Клонировать репозиторий можно так:
 
@@ -54,7 +54,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/515875-cat-energy-17.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/515875-cat-energy-17
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/515875-cat-energy-17/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/515875-cat-energy-17?type=dev
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/167879-cat-energy-16.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/167879-cat-energy-16
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/167879-cat-energy-16/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/167879-cat-energy-16?type=dev

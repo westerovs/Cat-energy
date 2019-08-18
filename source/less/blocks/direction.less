@@ -1,0 +1,126 @@
+.direction {
+  border: 1px solid #cdcdcd;
+  position: relative;
+  width: 318px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 29px;
+}
+
+.direction__wrapper {
+  padding: 0 19px;
+  width: 280px;
+  padding-top: 25px;
+  padding-bottom: 3px;
+}
+
+.direction__wrapper label {
+  position: relative;
+  cursor: pointer;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.direction__wrapper label::before,
+.direction__wrapper label::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -45px;
+  border-radius: 50%;
+}
+
+.direction__wrapper label::before {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e6e6e6;
+}
+
+.direction__item:hover label::before {
+  border-color: #cdcdcd;
+}
+
+.direction__item:active label {
+  opacity: 0.3;
+}
+
+.direction__wrapper label::after {
+  position: absolute;
+  top: 6px;
+  left: -35px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
+
+.direction__item {
+  padding-bottom: 22px;
+  padding-left: 43px;
+}
+
+.direction__wrapper input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked ~ label::after {
+  background-color: #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .direction {
+    width: 768px;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 75px;
+  }
+
+  .direction__wrapper {
+    width: 575px;
+    margin-left: 72px;
+    padding-left: 33px;
+    border: 1px solid #cdcdcd;
+    padding-top: 2px;
+    padding-bottom: 33px;
+  }
+
+  .direction__item {
+    width: 250px;
+    padding: 0;
+    margin: 0;
+    padding-left: 42px;
+    margin-top: 32px;
+  }
+
+  .direction__wrapper label {
+    font-size: 19px;
+    line-height: 17px;
+    padding-left: 10px;
+  }
+
+  .direction__wrapper label::before {
+    left: -49px;
+    width: 38px;
+    height: 37px;
+  }
+
+  .direction__wrapper label::after {
+    top: 7px;
+    left: -37px;
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .direction__wrapper {
+    margin-left: 66px;
+    width: 515px;
+  }
+
+  .direction {
+    margin-bottom: 38px;
+  }
+}

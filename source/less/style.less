@@ -1,114 +1,27 @@
-html {
-box-sizing: border-box;
-}
-
-*, *:before, *:after {
-box-sizing: inherit;
-}
-
-picture {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 0;
-}
-
-ul,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-// Позиционирование
-// Блочная модель
-// Типографика
-// Оформление
-// Анимация
-// Разное
-
-// Блок хэдэр
-@import 'blocks/header.less';
-// экран Превью
-@import 'blocks/preview.less';
-//блок контакты
-@import 'blocks/contacts.less';
-//экран Похудение/Масса
-@import 'blocks/categories.less';
-// экран как это работает
-@import 'blocks/advantage.less';
-// экран живой пример
-@import 'blocks/before-after.less';
-// Блок футер
-@import 'blocks/footer.less';
-// //кнопка
-@import 'blocks/button.less';
-// //заголовок
-@import 'blocks/page-title.less';
-// Блок каталог
-@import 'blocks/catalog.less';
-// Блок форма
-@import 'blocks/form.less';
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@white: #ffffff;
-@black: #111111;
-@gray: #444444;
-@green: #68B738;
-@light-gray: #f2f2f2;
-@border-gray: #cdcdcd;
-@border-footer: #d9d9d9;
-@border-catalog: #ededed;
-@border-categories: #d9d9d9;
-@border-light-gray: #e6e6e6;
-
-.second-font() {
-  font-family: "Arial", "Tahoma", sans-serif;
-}
-
-.font-main() {
-  font-family: "Oswald", "Arial", sans-serif;
-}
-
-body {
-  .font-main();
-}
-
-.padding-global(@value-padding: 20px;) {
-  padding-left: @value-padding;
-  padding-right: @value-padding;
-}
+@import "blocks/normalize.less";
+@import "blocks/scaffolding.less";
+@import "blocks/button.less";
+@import "blocks/catalog.less";
+@import "blocks/copyright.less";
+@import "blocks/global.less";
+@import "blocks/main-nav.less";
+@import "blocks/stats.less";
+@import "blocks/page-catalog.less";
+@import "blocks/page-footer.less";
+@import "blocks/page-header.less";
+@import "blocks/programm.less";
+@import "blocks/sentence.less";
+@import "blocks/site-list.less";
+@import "blocks/social.less";
+@import "blocks/work.less";
+@import "blocks/variables.less";
+@import "blocks/page-main.less";
+@import "blocks/contacts.less";
+@import "blocks/example.less";
+@import "blocks/count.less";
+@import "blocks/additional.less";
+@import "blocks/page-form.less";
+@import "blocks/direction.less";
+@import "blocks/user-contacts.less";
+@import "blocks/comments.less";
+@import "blocks/additionally.less";

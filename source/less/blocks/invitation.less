@@ -1,0 +1,86 @@
+.invitation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .invitation {
+    padding: 60px 0;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation {
+    position: absolute;
+    left: 40px;
+    top: 0%;
+    max-width: 570px;
+    width: 100%;
+    background: #ffffff;
+    padding: 32px 35px;
+    transform: translateY(48%);
+  }
+}
+
+.invitation__title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  line-height: 20px;
+  flex: 0 0 50%;
+  margin: 0;
+  text-transform: uppercase;
+  max-width: 160px;
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__title {
+    line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation__title {
+    padding: 30px 40px;
+    max-width: 50%;
+  }
+}
+
+.invitation__text {
+  flex: 0 0 50%;
+  margin: 0;
+  line-height: 20px;
+  max-width: 160px;
+  width: 100%;
+  font-family: "Arial", "Tahoma", sans-serif;
+}
+
+@media (min-width: @tablet-width) and (max-width: 1299px) {
+  .invitation__text {
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation__text {
+    padding: 30px 40px;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__text span {
+    display: block;
+    margin-top: 15px;
+  }
+}
