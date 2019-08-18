@@ -1,0 +1,93 @@
+.title-line {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  position: relative;
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 40px;
+  margin-left: -40px;
+  margin-bottom: 32px;
+  margin-top: 0;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .title-line {
+    font-size: 36px;
+  }
+}
+
+.title-line::after,
+.title-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 3px;
+  margin-top: 2px;
+  background: @bg-lightgreen;
+  z-index: -1;
+}
+
+.title-line::after {
+  left: 20px;
+}
+
+.title-line::before {
+  right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .title-line {
+    padding-right: 40px;
+    margin-bottom: 75px;
+  }
+}
+
+.title-line--width {
+  margin-right: 77px;
+}
+
+.title-line--width::after {
+  top: 30%;
+}
+
+@media (min-width: @tablet-width) {
+  .title-line--width::after {
+    top: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title-line--width {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-line--width {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: 1299px) {
+  .title-line--left {
+    margin-left: 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title-line--ident {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-line--ident {
+    margin-bottom: 55px;
+  }
+}

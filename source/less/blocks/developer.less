@@ -1,0 +1,42 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  transition: 0.3s;
+}
+
+@media (min-width: @tablet-width) {
+  .developer {
+    justify-content: flex-end;
+  }
+}
+
+.developer:active {
+  opacity: 0.3;
+}
+
+.developer__name {
+  display: inline-block;
+  font-family: "Arial", "Tahoma", sans-serif;
+  color: #444444;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .developer__name {
+    margin-right: 10px;
+  }
+}
+
+.developer__icon {
+  margin-right: -5px;
+  margin-top: 3px;
+  fill: #666666;
+  transition: 0.3s;
+}
+
+.developer:hover .developer__icon {
+  fill: #68b738;
+}

@@ -1,0 +1,132 @@
+.page-header__wrapper--picture {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__wrapper {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 12px;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.page-header__logo:hover {
+  opacity: 0.7;
+}
+
+.page-header__logo:active {
+  opacity: 0.4;
+}
+
+.page-header__icon-name {
+  position: absolute;
+  top: 11px;
+  left: 48px;
+  width: 101px;
+  height: 20px;
+  margin-left: 52px;
+}
+
+.page-header__icon-min {
+  margin-left: 12px;
+  width: 188px;
+  height: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper--picture {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 708px;
+  }
+
+  .page-header__container {
+    margin-bottom: 2px;
+  }
+
+  .page-header__logo-image {
+    display: none;
+  }
+
+  .page-header__icon-name {
+    display: none;
+  }
+
+  .page-header__logo {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .page-header__logo img {
+    width: 173px;
+    height: 58px;
+    margin-left: 0;
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__stab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../img/index-background-desktop@1x.webp");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: #79b35e;
+    height: 696px;
+    width: 50%;
+    background-size: 112%;
+  }
+
+  .page-header__wrapper--picture {
+    padding: 0;
+    margin: 0;
+    width: 0;
+  }
+
+  .page-header {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    width: 1220px;
+    padding: 0 40px;
+    margin: 0 auto;
+    padding-top: 54px;
+  }
+
+  .page-header__logo img {
+    width: 202px;
+    height: 63px;
+    margin-top: -3px;
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+}

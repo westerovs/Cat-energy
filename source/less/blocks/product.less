@@ -1,0 +1,125 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: #d9d9d9;
+    width: calc(100% + 40px);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product::after {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    flex-direction: column;
+    padding: 40px;
+    background: @bg-lightgrey;
+  }
+}
+
+.product__link {
+  display: block;
+}
+
+.product__title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  max-width: 100px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .product__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product__title {
+    max-width: 130px;
+    width: 100%;
+    margin: 30px auto 20px;
+    text-align: center;
+  }
+}
+
+.product__options {
+  width: 100%;
+  padding: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", "Tahoma", sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .product__options {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product__options tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product__options td:last-child {
+  text-align: right;
+}
+
+@media (min-width: @tablet-width) {
+  .product__options td {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}
+
+.product__img {
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .product__img {
+    flex: 0 0 auto;
+    max-width: inherit;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    min-height: 213px;
+    margin: -120px -40px 0;
+  }
+}
+
+.product__description {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .product__description {
+    flex: 0 0 auto;
+    max-width: inherit;
+  }
+}

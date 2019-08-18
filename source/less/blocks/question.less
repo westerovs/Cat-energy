@@ -1,0 +1,235 @@
+.question {
+  margin-bottom: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .question {
+    margin-bottom: 77px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .question {
+    margin-bottom: 80px;
+  }
+}
+
+.question__field {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .question__field {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question__field {
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .question__field--ident-small {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question__field--ident-small {
+    margin-bottom: 30px;
+  }
+}
+
+.question__field--line {
+  padding: 15px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: @tablet-width) {
+  .question__field--line {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 25px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .question__field--ident {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question__field--ident {
+    margin-bottom: 60px;
+    margin-top: -15px;
+  }
+}
+
+.question__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media (min-width: @tablet-width) {
+  .question__row {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question__row {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.question__column {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .question__column {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question__column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .question__column--xl-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question__column--xl-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .question__column--xl-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .question__column--xl-2 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.question__field input[type="checkbox"],
+.question__field input[type="radio"] {
+  display: none;
+}
+
+.question__field input[type="checkbox"]:checked + label::before,
+.question__field input[type="radio"]:checked + label::before {
+  display: block;
+}
+
+.question__text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Arial", "Tahoma", sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .question__text {
+    margin: 13px 0;
+    line-height: 16px;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.question__textarea {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 14px 13px;
+  transition: 0.3s;
+  height: 151px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .question__textarea {
+    height: 173px;
+    padding: 8px 17px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.question__textarea::-webkit-input-placeholder {
+  color: @font-color-default;
+}
+
+.question__textarea:-ms-input-placeholder {
+  color: @font-color-default;
+}
+
+.question__textarea::-ms-input-placeholder {
+  color: @font-color-default;
+}
+
+.question__textarea::placeholder {
+  color: @font-color-default;
+}
+
+.question__textarea:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.question__textarea:active,
+.question__textarea:focus {
+  border: 1px solid @font-color-default;
+  outline: none;
+}
+
+@media (min-width: @tablet-width) {
+  .question__btn {
+    padding: 15px;
+    font-size: 20px;
+  }
+}

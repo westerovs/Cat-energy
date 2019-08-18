@@ -1,0 +1,126 @@
+.comments {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.comments__about-us {
+  position: relative;
+  padding: 0 20px;
+  width: 280px;
+}
+
+.comments__title {
+  font-size: 22px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  margin-bottom: 34px;
+}
+
+.comments__title::after {
+  content: "";
+  top: 12px;
+  right: 0;
+  position: absolute;
+  width: 155px;
+  border: 2px solid #68b738;
+}
+
+.comments__about-us textarea {
+  width: 260px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #646464;
+}
+
+@media (min-width: @tablet-width) {
+  .comments {
+    width: 708px;
+    padding: 0 30px;
+    margin-bottom: 61px;
+  }
+
+  .comments__about-us {
+    padding: 0 30px;
+    width: 635px;
+    margin: 0 auto;
+  }
+
+  .comments__title {
+    font-size: 34px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .comments__title::after {
+    content: "";
+    top: 21px;
+    right: -36px;
+    position: absolute;
+    width: 476px;
+    border: 2px solid #68b738;
+  }
+
+  .comments__title::before {
+    content: "";
+    top: 21px;
+    left: -36px;
+    position: absolute;
+    width: 27px;
+    border: 2px solid #68b738;
+  }
+
+  .comments__about-us textarea {
+    width: 612px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+    padding-top: 10px;
+    padding-left: 18px;
+    height: 152px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .comments__about-us {
+    width: 1220px;
+  }
+
+  .comments__title {
+    margin-top: 48px;
+    margin-bottom: 74px;
+  }
+
+  .comments__about-us textarea {
+    width: 1198px;
+  }
+
+  .comments__title::after {
+    content: "";
+    top: 21px;
+    right: 0;
+    position: absolute;
+    width: 1027px;
+    border: 2px solid #68b738;
+  }
+
+  .comments__title::before {
+    content: "";
+    top: 21px;
+    left: 0;
+    position: absolute;
+    width: 25px;
+    border: 2px solid #68b738;
+  }
+}
