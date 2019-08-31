@@ -1,3 +1,7 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__wrapper--picture {
   min-width: 320px;
   margin: 0 auto;
@@ -90,14 +94,18 @@
   .page-header__stab {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -70px;
     background-image: url("../img/index-background-desktop@1x.webp");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-color: #79b35e;
     height: 696px;
-    width: 50%;
-    background-size: 112%;
+    width: 720px;
+    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.webp");
+    }
   }
 
   .page-header__wrapper--picture {

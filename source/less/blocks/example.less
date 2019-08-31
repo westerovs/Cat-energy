@@ -22,11 +22,13 @@
 }
 
 .example__description {
+  width: 270px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
   margin-bottom: 24px;
+
 }
 
 .example__lost {
@@ -47,35 +49,6 @@
 
 .example__total input[type="radio"] {
   display: none;
-}
-
-.example__list {
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 16px;
-}
-
-.example__picture {
-  display: flex;
-  width: 300%;
-  transition: transform 0.8s ease;
-}
-
-.example__picture img {
-  float: left;
-  margin: 0;
-  padding: 0;
-  margin-left: -20px;
-  padding-top: 20px;
-  width: 318px;
-}
-
-.example__before {
-  position: absolute;
-  top: 0;
-  left: 320px;
-  width: 320px;
-  height: 240px;
 }
 
 .example__slider {
@@ -137,30 +110,61 @@
   margin-left: 103px;
 }
 
+.example__list {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.example__picture {
+  display: flex;
+  width: 300%;
+  transition: transform 0.8s ease;
+}
+
 .example__cat-on {
+  width: 170%;
+  height: 260px;
   background-image: url("../img/before-mobile@1x.png");
   background-position: -18px 17px;
   background-repeat: no-repeat;
-  width: 170%;
   overflow: hidden;
-  height: 260px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: 320px;
+    background-position: -18px 17px;
+  }
 }
 
 .example__cat-off {
+  height: 260px;
+  width: 300%;
   background-image: url("../img/after-mobile@1x.png");
   background-position: 0 30px;
   background-repeat: no-repeat;
-  height: 260px;
-  width: 300%;
   overflow: hidden;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/after-mobile@2x.png");
+    background-size: 320px;
+    background-position: -18px 17px;
+  }
 }
+
+
+
+//*******************************************************************************************************
+//*******************************************************************************************************
+// **********************планшет*************************************************************************
+
+
+
 
 @media (min-width: @tablet-width) {
   .example {
     background: #ffffff;
     position: relative;
-
-
     padding-bottom: 53px;
     margin-bottom: -5px;
   }
@@ -180,11 +184,12 @@
   }
 
   .example__description {
+    width: 680px;
+    margin-right: 40px;
+    padding-bottom: 30px;
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    margin-right: 40px;
-    padding-bottom: 30px;
   }
 
   .example__container {
@@ -218,12 +223,24 @@
     background-image: url("../img/before-tablet@1x.png");
     background-position: 15px 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-mobile@2x.png");
+      background-size: 690px ;
+      background-position: 15px 0;
+    }
   }
 
   .example__cat-off {
     background-image: url("../img/after-tablet@1x.png");
-    background-position: -340px 0;
+    background-position: -337px 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-mobile@2x.png");
+      background-size: 690px ;
+      background-position: -340px 0;
+    }
   }
 
   .example__unwrapper-left {
@@ -280,9 +297,29 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: -331px;
-    border-bottom: 1px dotted #bebebe;
+    border-bottom: 1px dashed #bebebe;
     width: 50px;
     padding-bottom: 5px;
+
+    /**
+     * Для эксплорера
+     */
+    -ms-user-select: none;
+
+    /**
+     * Для мозилы
+     */
+    -moz-user-select: none;
+
+    /**
+     * Для конкверора
+     */
+    -khtml-user-select: none;
+
+    /**
+     * Для Сафари и Хрома
+     */
+    -webkit-user-select: none;
   }
 
   .example__next {
@@ -322,6 +359,13 @@
   }
 }
 
+
+//*******************************************************************************************************
+//*******************************************************************************************************
+// **********************декстоп*************************************************************************
+
+
+
 @media (min-width: @desktop-width) {
   .example {
     padding: 0;
@@ -358,10 +402,11 @@
   }
 
   .example__description {
+    margin-right: 30px;
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    width: 425px;
+    width: 435px;
     padding-top: 81px;
     padding-bottom: 45px;
   }
@@ -382,12 +427,24 @@
     background-image: url("../img/before-tablet@1x.png");
     background-position: -10px 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-mobile@2x.png");
+      background-size: 690px;
+      background-position: -10px 0;
+    }
   }
 
   .example__cat-off {
     background-image: url("../img/after-tablet@1x.png");
     background-position: -364px 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-mobile@2x.png");
+      background-size: 690px;
+      background-position: -364px 0;
+    }
   }
 
   .example__slider {
@@ -399,7 +456,7 @@
   }
 
   .example__next {
-    margin-left: 467px;
+    margin-left: 470px;
     margin-right: 0;
   }
 
