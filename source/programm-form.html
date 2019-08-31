@@ -14,10 +14,10 @@
 
 
     <header class="pege-header">
-      <div class="page-header__wrapper page-header__wrapper--picture">
+      <div class="page-header__wrapper">
         <div class="page-header__nav">
           <div class="page-header__container">
-            <a href="index.html" class="page-header__logo">
+            <a class="page-header__logo">
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -72,18 +72,18 @@
           </div>
 
           <div class="page-form__direction direction">
-            <div class="direction__wrapper">
+            <div tabindex="0" class="direction__wrapper">
               <div class="direction__item">
-                <input type="radio" name="answer" id="weight-down" checked>
-                <label for="weight-down">Похудение</label>
+                <input type="radio"  name="answer" id="weight-down" checked>
+                <label tabindex="0" for="weight-down">Похудение</label>
               </div>
               <div class="direction__item">
                 <input type="radio" name="answer" id="weight-up">
-                <label for="weight-up">Набор массы</label>
+                <label tabindex="0" for="weight-up">Набор массы</label>
               </div>
               <div class="direction__item">
                 <input type="radio" name="answer" id="unknown">
-                <label for="unknown">Не знаю (нужен ваш совет)</label>
+                <label tabindex="0" for="unknown">Не знаю (нужен ваш совет)</label>
               </div>
             </div>
           </div>
@@ -123,35 +123,35 @@
                 <svg width="21" height="21">
                   <use xlink:href="#icon-tick"></use>
                 </svg>
-                <label for="sugar">Сахарозаменитель</label>
+                <label tabindex="0" for="sugar">Сахарозаменитель</label>
               </p>
               <p class="additionally__item">
                 <input type="checkbox" name="drink" id="drink">
                 <svg width="21" height="21">
                   <use xlink:href="#icon-tick"></use>
                 </svg>
-                <label for="drink">Питьевая вода</label>
+                <label tabindex="0" for="drink">Питьевая вода</label>
               </p>
               <p class="additionally__item">
                 <input type="checkbox" name="milk" id="milk">
                 <svg width="21" height="21">
                   <use xlink:href="#icon-tick"></use>
                 </svg>
-                <label for="milk">Молоко</label>
+                <label tabindex="0" for="milk">Молоко</label>
               </p>
               <p class="additionally__item">
                 <input type="checkbox" name="vitamins" id="vitamins">
                 <svg width="21" height="21">
                   <use xlink:href="#icon-tick"></use>
                 </svg>
-                <label for="vitamins">Витамины</label>
+                <label tabindex="0" for="vitamins">Витамины</label>
               </p>
             </div>
           </div>
         </div>
         <div class="button__wrapper">
           <input class="page-form__button button" type="submit" value="Отправить заявку">
-          <p class="page-form__requirements">*&mdash; Обязательные поля</p>
+          <p class="page-form__requirements">* &mdash; Обязательные поля</p>
         </div>
       </form>
     </main>
@@ -212,6 +212,6 @@
     </footer>
 
     <script src="js/mini-main.js"></script>
-
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
