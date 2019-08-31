@@ -16,4 +16,3 @@ next.onmousedown = function () {
 next.onmouseup = function () {
   next.style='none'
 }
-
