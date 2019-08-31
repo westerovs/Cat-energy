@@ -1,0 +1,300 @@
+.additional {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  overflow: hidden;
+  padding-top: 6px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.additional__wrapper {
+  padding: 0 20px;
+  width: 280px;
+}
+
+.additional::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 48px;
+  border: 2px solid #68b738;
+}
+
+.additional__title {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 33px;
+  margin-bottom: 7px;
+}
+
+.additional__item {
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 7px;
+  padding-bottom: 17px;
+}
+
+.additional__item b {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.additional__name {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 11px;
+}
+
+.additional__button {
+  width: 280px;
+  padding-bottom: 9px;
+  padding-top: 12px;
+}
+
+.additional__order {
+  position: relative;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 288px;
+  margin-top: 40px;
+  color: #ffffff;
+  margin-bottom: 35px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.additional__order svg {
+  position: absolute;
+  top: 65px;
+  left: 112px;
+  fill: #ffffff;
+}
+
+.additional__order p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  text-align: center;
+  padding-left: 58px;
+  padding-top: 186px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional {
+    margin: 0 auto;
+    width: 768px;
+  }
+
+  .additional__wrapper {
+    padding: 0 30px;
+    width: 708px;
+  }
+
+  .additional__title {
+    font-size: 34px;
+    line-height: 36px;
+    margin-top: 58px;
+    margin-left: 37px;
+    margin-bottom: 47px;
+    border: none;
+  }
+
+  .additional::before {
+    content: "";
+    position: absolute;
+    top: 86px;
+    right: 0;
+    width: 324px;
+    border: 2px solid #68b738;
+  }
+
+  .additional::after {
+    content: "";
+    position: absolute;
+    top: 86px;
+    left: 0;
+    width: 25px;
+    border: 2px solid #68b738;
+  }
+
+  .additional__list {
+    padding: 0 37px;
+    border: 1px solid grey;
+  }
+
+  .additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border: none;
+  }
+
+  .additional__item b {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .additional__button {
+    width: 708px;
+    margin-top: 7px;
+  }
+
+  .additional__name {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 3px;
+  }
+
+  .additional__name span:last-child {
+    width: 94px;
+    text-align: right;
+  }
+
+  .additional__order {
+    position: relative;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 276px;
+    margin-top: 68px;
+    margin-bottom: 0;
+    color: #ffffff;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .additional__order svg {
+    left: 89px;
+  }
+
+  .additional__order p {
+    text-align: left;
+    padding-left: 423px;
+    padding-top: 72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .additional__wrapper {
+    padding: 0 40px;
+    width: 1220px;
+  }
+
+  .additional__container {
+    display: flex;
+    margin-bottom: 79px;
+  }
+
+  .additional__title {
+    font-size: 33px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-top: 65px;
+  }
+
+  .additional::before {
+    content: "";
+    position: absolute;
+    top: 91px;
+    right: 0;
+    width: 883px;
+    border: 2px solid #68b738;
+  }
+
+  .additional::after {
+    content: "";
+    position: absolute;
+    top: 91px;
+    left: 0;
+    width: 25px;
+    border: 2px solid #68b738;
+  }
+
+  .additional__order {
+    position: relative;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 288px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 81px;
+    color: #ffffff;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  .additional__order p {
+    padding-left: 41px;
+    padding-top: 169px;
+    text-align: center;
+  }
+
+  .additional__order svg {
+    left: 93px;
+  }
+
+  .additional__list {
+    padding: 0;
+    width: 894px;
+    border: none;
+  }
+
+  .additional__item {
+    padding-bottom: 10px;
+    padding-top: 13px;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .additional__item--vitamins {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 16px;
+  }
+
+  .additional__item b {
+    width: 289px;
+    padding-top: 11px;
+  }
+
+  .additional__name {
+    width: 287px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .additional__name-right {
+    padding-right: 10px;
+  }
+
+  .additional__button {
+    width: 245px;
+    margin-top: 0;
+  }
+}

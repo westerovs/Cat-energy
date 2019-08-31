@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  background-color: @bg-lightgreen;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--light {
+    background-color: @bg-lightgrey;
+    color: @font-color-default;
+  }
+
+  &--light:hover {
+    background-color: #ebebeb;
+  }
+
+  &--light:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &--small {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn--small {
+    font-size: 20px;
+    width: auto;
+    padding: 16px 27px;
+  }
+}

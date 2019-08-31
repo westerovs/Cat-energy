@@ -1,17 +1,23 @@
 .button {
-  .font-main();
-  height: 40px;
-  padding-top: 11px;
-  padding-bottom: 14px;
-  width: 280px;
-  margin: 0 auto;
-  display: block;
-  border: 0;
-  font-size: 14px;
-  text-align: center;
-  font-weight: 400;
-  line-height: 18px;
+  display: inline-block;
+  width: 318px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
-  background-color: @green;
-  color: @white;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  background-color: #68b738;
+  color: #ffffff;
+  text-align: center;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: #99c684;
+  outline: none;
 }
