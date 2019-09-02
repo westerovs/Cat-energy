@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0 auto;
   margin-bottom: 29px;
+  position: relative;
 }
 
 .direction__wrapper {
@@ -12,6 +13,7 @@
   width: 280px;
   padding-top: 25px;
   padding-bottom: 3px;
+  position: relative;
 }
 
 .direction__wrapper label {
@@ -33,15 +35,21 @@
   border-radius: 50%;
 }
 
+//круг радио
 .direction__wrapper label::before {
   width: 30px;
   height: 30px;
   border: 1px solid #e6e6e6;
 }
 
+// .direction__wrapper label:focus {
+//   outline: 4px dashed #000;
+// }
+
 .direction__item:hover label::before {
   border-color: #cdcdcd;
 }
+
 
 .direction__item:active label {
   opacity: 0.3;
@@ -61,9 +69,17 @@
   padding-left: 45px;
 }
 
+// исчезни**************************************
+
 .direction__wrapper input[type="radio"] {
-  display: none;
+  position: absolute;
+  left: -5000px;
 }
+
+.direction__wrapper input[type="radio"]:focus {
+  outline: 1px dashed red;
+}
+// исчезн******************************************
 
 input[type="radio"]:checked ~ label::after {
   background-color: #68b738;
